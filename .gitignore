@@ -1,0 +1,10 @@
+.idea
+*.iml
+framework-api/target
+framework-entities/target
+framework-gateway/target
+framework-parent/target
+framework-provider-activiti/target
+framework-provider-user/target
+framework-security/target
+framework-utils/target
