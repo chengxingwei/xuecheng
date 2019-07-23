@@ -16,6 +16,7 @@
     <module>../framework-provider-activiti</module>
     <module>../framework-security</module>
     <module>../framework-gateway</module>
+    <module>../framework-zipkin</module>
   </modules>
   <name>framework-parent</name>
 
