@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
 
-@FeignClient(value = "MICROSERVICECLOUD-USER",fallbackFactory=RoleClientServiceFallbackFactory.class)
+@FeignClient(value = "framework-user",fallbackFactory=RoleClientServiceFallbackFactory.class)
 public interface RoleClientService {
 
     @RequestMapping(value = "/system/rolelist",method = RequestMethod.GET)

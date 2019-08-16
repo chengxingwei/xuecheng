@@ -17,6 +17,7 @@
     <module>../framework-security</module>
     <module>../framework-gateway</module>
     <module>../framework-zipkin</module>
+      <module>../framework-annotest</module>
   </modules>
   <name>framework-parent</name>
 
@@ -38,6 +39,8 @@
     <ribbon.version>1.4.6.RELEASE</ribbon.version>
     <hystrix-dashboard.version>1.4.6.RELEASE</hystrix-dashboard.version>
     <zuul.version>1.4.6.RELEASE</zuul.version>
+    <zipkin.version>2.12.2</zipkin.version>
+    <zipkin-storage-mysql.version>2.8.4</zipkin-storage-mysql.version>
   </properties>
   <dependencies>
 

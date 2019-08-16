@@ -19,4 +19,10 @@ public class RoleController {
     {
         return  roleRepository.findAll();
     }
+
+    @RequestMapping("/system/rolelist1")
+    public String asadfs()
+    {
+        return  "123123";
+    }
 }
