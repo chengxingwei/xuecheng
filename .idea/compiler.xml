@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="framework-annotest" />
+        <module name="framework-api" />
+        <module name="framework-entities" />
+        <module name="framework-gateway" />
+        <module name="framework-provider-activiti" />
+        <module name="framework-provider-user" />
+        <module name="framework-security" />
+        <module name="framework-utils" />
+        <module name="framework-zipkin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="framework-annotest" target="1.7" />
+      <module name="framework-api" target="1.7" />
+      <module name="framework-entities" target="1.8" />
+      <module name="framework-gateway" target="1.8" />
+      <module name="framework-parent" target="1.8" />
+      <module name="framework-provider-activiti" target="1.8" />
+      <module name="framework-provider-user" target="1.8" />
+      <module name="framework-security" target="1.7" />
+      <module name="framework-utils" target="1.7" />
+      <module name="framework-zipkin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

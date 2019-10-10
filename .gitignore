@@ -1,4 +1,3 @@
-.idea
 *.iml
 framework-api/target
 framework-entities/target

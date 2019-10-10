@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="framework-annotest:war">
+    <output-path>$PROJECT_DIR$/framework-annotest/target</output-path>
+    <root id="archive" name="framework-parent.war">
+      <element id="artifact" artifact-name="framework-annotest:war exploded" />
+    </root>
+  </artifact>
+</component>
