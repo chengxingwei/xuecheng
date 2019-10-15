@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xuecheng.security.mapper.UserInfoMapper">
+    <select id="list" resultType="com.xuecheng.entities.system.UserInfo" parameterType="com.xuecheng.security.dto.UserInfoDTO">
+        select *  FROM xc_userinfo where 1 = 1
+    </select>
+</mapper>
+
+

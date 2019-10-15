@@ -29,16 +29,9 @@ public class Role implements Serializable {
     @Column(name = "Status")
     private Integer status;
 
-
     @JoinTable(name="xc_role_menu",
             joinColumns={@JoinColumn(name="RoleID", referencedColumnName="ID")},
             inverseJoinColumns={@JoinColumn(name="MenuID", referencedColumnName="ID")})
     @ManyToMany
     private Set<Menu> menus;
-
-    @JoinTable(name="xc_role_btn",
-            joinColumns={@JoinColumn(name="RoleID", referencedColumnName="ID")},
-            inverseJoinColumns={@JoinColumn(name="BtnID", referencedColumnName="ID")})
-    @ManyToMany
-    private Set<Button> buttons;
 }

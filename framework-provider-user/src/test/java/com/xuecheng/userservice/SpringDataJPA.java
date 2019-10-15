@@ -1,6 +1,5 @@
 package com.xuecheng.userservice;
 
-import com.xuecheng.entities.Person;
 import com.xuecheng.userservice.repository.PersonRepsotory;
 import org.junit.Test;
 import org.junit.runner.RunWith;

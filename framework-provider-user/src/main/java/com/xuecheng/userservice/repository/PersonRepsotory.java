@@ -3,7 +3,6 @@ package com.xuecheng.userservice.repository;
 import java.util.Date;
 import java.util.List;
 
-import com.xuecheng.entities.Person;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Modifying;

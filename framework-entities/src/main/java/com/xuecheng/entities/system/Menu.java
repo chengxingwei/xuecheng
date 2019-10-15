@@ -32,9 +32,9 @@ public class Menu implements Serializable {
     @Column(name = "MenuPath")
     private String menuPath;
 
-    @JoinTable(name="xc_menu_btn",
-            joinColumns={@JoinColumn(name="MenuID", referencedColumnName="ID")},
-            inverseJoinColumns={@JoinColumn(name="BtnID", referencedColumnName="ID")})
-    @ManyToMany
-    private Set<Button> buttons;
+    @Column(name = "BtnID")
+    private Long btnID;
+
+    @Column(name = "MenuType")
+    private Long menuType;
 }

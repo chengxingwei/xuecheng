@@ -40,12 +40,10 @@ public class FilterInvocationSecurityMetadataSourceImpl  implements FilterInvoca
             return null;
         }
         Menu menu = menuRepository.findByMenuPath(requestUrl);
-
         //如果没有匹配的url则说明大家都可以访问
         if(menu == null) {
             return SecurityConfig.createList("ROLE_LOGIN");
         }
-
         //将resource所需要到的roles按框架要求封装返回（ResourceService里面的getRoles方法是基于RoleRepository实现的）
         List<Role> roles = roleRepository.findByMenusId(menu.getId());
         int size = roles.size();

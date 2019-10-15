@@ -1,9 +1,6 @@
 package com.xuecheng.userservice.controller;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.xuecheng.entities.Customer;
-import com.xuecheng.entities.Dept;
-import com.xuecheng.entities.Person;
 import com.xuecheng.userservice.cloudstream.StreamClient;
 import com.xuecheng.userservice.dao.CustomerRepository;
 import com.xuecheng.userservice.service.DeptService;

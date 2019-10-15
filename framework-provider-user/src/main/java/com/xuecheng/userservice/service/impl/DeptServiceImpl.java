@@ -1,7 +1,5 @@
 package com.xuecheng.userservice.service.impl;
 
-import com.xuecheng.entities.Dept;
-import com.xuecheng.entities.Person;
 import com.xuecheng.userservice.dao.DeptDao;
 import com.xuecheng.userservice.repository.PersonRepsotory;
 import com.xuecheng.userservice.service.DeptService;

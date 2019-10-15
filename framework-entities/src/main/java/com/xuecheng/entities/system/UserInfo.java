@@ -6,7 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -32,14 +31,19 @@ public class UserInfo implements Serializable {
     @Column(name = "Password")
     private String password;
 
-    @Column(name = "Account")
-    private String account;
-
     @Column(name = "Mobile")
     private String mobile;
 
     @Column(name = "Status")
     private Integer status;
+
+    @Column(name = "NickName")
+    private String nickName;
+
+
+    @Column(name = "RealName")
+    private String realName;
+
 
     @JoinTable(name="xc_user_role",
             joinColumns={@JoinColumn(name="UserInfoID", referencedColumnName="ID")},

@@ -1,6 +1,5 @@
 package com.xuecheng.userservice.dao;
 
-import com.xuecheng.entities.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

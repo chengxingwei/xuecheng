@@ -25,7 +25,7 @@
       <module name="framework-parent" target="1.8" />
       <module name="framework-provider-activiti" target="1.8" />
       <module name="framework-provider-user" target="1.8" />
-      <module name="framework-security" target="1.7" />
+      <module name="framework-security" target="1.8" />
       <module name="framework-utils" target="1.7" />
       <module name="framework-zipkin" target="1.8" />
     </bytecodeTargetLevel>

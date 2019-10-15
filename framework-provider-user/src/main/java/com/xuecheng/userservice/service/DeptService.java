@@ -1,8 +1,5 @@
 package com.xuecheng.userservice.service;
 
-import com.xuecheng.entities.Dept;
-import com.xuecheng.entities.Person;
-
 import java.util.List;
 
 
