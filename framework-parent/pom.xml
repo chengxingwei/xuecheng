@@ -18,6 +18,8 @@
     <module>../framework-gateway</module>
     <module>../framework-zipkin</module>
       <module>../framework-annotest</module>
+      <module>../framework-kafka</module>
+    <module>../framework-elastic-job</module>
   </modules>
   <name>framework-parent</name>
 

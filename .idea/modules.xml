@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/framework-annotest/framework-annotest.iml" filepath="$PROJECT_DIR$/framework-annotest/framework-annotest.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-api/framework-api.iml" filepath="$PROJECT_DIR$/framework-api/framework-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-elastic-job/framework-elastic-job.iml" filepath="$PROJECT_DIR$/framework-elastic-job/framework-elastic-job.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-entities/framework-entities.iml" filepath="$PROJECT_DIR$/framework-entities/framework-entities.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-gateway/framework-gateway.iml" filepath="$PROJECT_DIR$/framework-gateway/framework-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-kafka/framework-kafka.iml" filepath="$PROJECT_DIR$/framework-kafka/framework-kafka.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-parent/framework-parent.iml" filepath="$PROJECT_DIR$/framework-parent/framework-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-provider-activiti/framework-provider-activiti.iml" filepath="$PROJECT_DIR$/framework-provider-activiti/framework-provider-activiti.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-provider-user/framework-provider-user.iml" filepath="$PROJECT_DIR$/framework-provider-user/framework-provider-user.iml" />

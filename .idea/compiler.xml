@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="framework-annotest" />
         <module name="framework-api" />
+        <module name="framework-elastic-job" />
         <module name="framework-entities" />
         <module name="framework-gateway" />
+        <module name="framework-kafka" />
         <module name="framework-provider-activiti" />
         <module name="framework-provider-user" />
         <module name="framework-security" />
@@ -20,8 +22,10 @@
     <bytecodeTargetLevel>
       <module name="framework-annotest" target="1.7" />
       <module name="framework-api" target="1.7" />
+      <module name="framework-elastic-job" target="1.8" />
       <module name="framework-entities" target="1.8" />
       <module name="framework-gateway" target="1.8" />
+      <module name="framework-kafka" target="1.8" />
       <module name="framework-parent" target="1.8" />
       <module name="framework-provider-activiti" target="1.8" />
       <module name="framework-provider-user" target="1.8" />
