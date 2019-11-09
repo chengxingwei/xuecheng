@@ -1,8 +1,9 @@
 package com.xuecheng.entities.system;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -14,24 +15,22 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Accessors(chain = true)
-@Entity
-@Table(name = "xc_role")
-public class Role implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID")
+@EqualsAndHashCode(callSuper = false)
+public class Role extends Model<Role> {
+
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    @Column(name = "RoleName")
+
     private String roleName;
 
-    @Column(name = "Status")
+
     private Integer status;
 
-    @JoinTable(name="xc_role_menu",
-            joinColumns={@JoinColumn(name="RoleID", referencedColumnName="ID")},
-            inverseJoinColumns={@JoinColumn(name="MenuID", referencedColumnName="ID")})
-    @ManyToMany
-    private Set<Menu> menus;
+    @Override
+    protected Serializable pkVal() {
+        return id;
+    }
 }

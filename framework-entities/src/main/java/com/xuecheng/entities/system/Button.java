@@ -1,8 +1,9 @@
 package com.xuecheng.entities.system;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.extension.activerecord.Model;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 import javax.persistence.*;
@@ -11,28 +12,31 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Accessors(chain = true)
-@Entity
-@Table(name = "xc_button")
-public class Button implements Serializable {
+@EqualsAndHashCode(callSuper = false)
+public class Button extends Model<Button> {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "ID")
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    @Column(name = "BtnName")
     private String btnName;
 
-    @Column(name = "BtnClass")
+
     private String btnClass;
 
-    @Column(name = "BgImage")
+
     private String bgImage;
 
-    @Column(name = "BthStyle")
+
     private String bthStyle;
 
-    @Column(name = "Status")
+
     private Integer status;
+
+
+    @Override
+    protected Serializable pkVal() {
+        return this.id;
+    }
 }

@@ -1,8 +1,0 @@
-2019-10-20 16:29:06,348 INFO [dump-all-ok] framework-gateway.yml+DEFAULT_GROUP, 1570801913000, length=872, md5=6ca36e1300e4c3b13a7e92ac9f2525dd
-
-2019-10-20 16:29:06,367 INFO [dump-all-ok] framework-security.yml+DEFAULT_GROUP, 1571039175000, length=1929, md5=e02001c09a1df65d78ba43e85020ebc6
-
-2019-10-21 21:30:54,390 INFO [dump-all-ok] framework-gateway.yml+DEFAULT_GROUP, 1571560786000, length=864, md5=6148ef671dfcb3c643c54839b34b70e1
-
-2019-10-21 21:30:54,410 INFO [dump-all-ok] framework-security.yml+DEFAULT_GROUP, 1571039175000, length=1929, md5=e02001c09a1df65d78ba43e85020ebc6
-

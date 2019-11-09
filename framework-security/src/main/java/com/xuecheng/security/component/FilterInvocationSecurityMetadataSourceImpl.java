@@ -1,10 +1,13 @@
 package com.xuecheng.security.component;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.xuecheng.entities.system.Menu;
 import com.xuecheng.entities.system.Role;
-import com.xuecheng.security.repository.MenuRepository;
-import com.xuecheng.security.repository.RoleRepository;
+import com.xuecheng.entities.system.RoleMenu;
+import com.xuecheng.security.mapper.MenuMapper;
+import com.xuecheng.security.mapper.RoleMapper;
+import com.xuecheng.security.mapper.RoleMenuMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;
@@ -12,6 +15,7 @@ import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -21,11 +25,14 @@ public class FilterInvocationSecurityMetadataSourceImpl  implements FilterInvoca
 
 
     @Autowired
-    RoleRepository roleRepository;
+    RoleMapper roleMapper;
 
 
     @Autowired
-    MenuRepository menuRepository;
+    MenuMapper menuMapper;
+
+    @Autowired
+    private RoleMenuMapper roleMenuMapper;
 
 
 
@@ -39,13 +46,18 @@ public class FilterInvocationSecurityMetadataSourceImpl  implements FilterInvoca
         if ("/login".equals(requestUrl)) {
             return null;
         }
-        Menu menu = menuRepository.findByMenuPath(requestUrl);
+        Menu menu = menuMapper.selectOne(new QueryWrapper<Menu>().eq("MenuPath",requestUrl));
         //如果没有匹配的url则说明大家都可以访问
         if(menu == null) {
             return SecurityConfig.createList("ROLE_LOGIN");
         }
         //将resource所需要到的roles按框架要求封装返回（ResourceService里面的getRoles方法是基于RoleRepository实现的）
-        List<Role> roles = roleRepository.findByMenusId(menu.getId());
+        List<RoleMenu> roleMenus = roleMenuMapper.selectList(new QueryWrapper<RoleMenu>().eq("MenuID",menu.getId()));
+        List<Long> roleIds = new ArrayList<>();
+        for (RoleMenu roleMenu : roleMenus) {
+            roleIds.add(roleMenu.getRoleID());
+        }
+        List<Role> roles = roleMapper.selectBatchIds(roleIds);
         int size = roles.size();
         String[] values = new String[size];
         for (int i = 0; i < size; i++) {

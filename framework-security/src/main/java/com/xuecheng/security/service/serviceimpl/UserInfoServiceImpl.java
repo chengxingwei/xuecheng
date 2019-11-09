@@ -1,12 +1,13 @@
 package com.xuecheng.security.service.serviceimpl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.xuecheng.entities.system.UserInfo;
 import com.xuecheng.enums.ResultTypeEnum;
 import com.xuecheng.security.dto.UserInfoDTO;
 import com.xuecheng.security.mapper.UserInfoMapper;
-import com.xuecheng.security.repository.UserInfoRepository;
 import com.xuecheng.security.service.UserInfoService;
 import com.xuecheng.utils.Pagination;
 import com.xuecheng.utils.Result;
@@ -17,13 +18,11 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Service
-public class UserInfoServiceImpl implements UserInfoService {
+public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper,UserInfo> implements UserInfoService {
 
     @Autowired
     private UserInfoMapper userInfoMapper;
 
-    @Autowired
-    private UserInfoRepository userInfoRepository;
 
     @Override
     public Result list(UserInfoDTO userInfoDTO) {
@@ -48,13 +47,12 @@ public class UserInfoServiceImpl implements UserInfoService {
             UserInfo userInfo = new UserInfo();
             userInfo.setUserName(userInfoDTO.getUserName())
                     .setMobile(userInfoDTO.getMobile());
-            userInfoRepository.save(userInfo);
+            userInfoMapper.insert(userInfo);
         }else{//修改
-            Optional<UserInfo> optionalUserInfo = userInfoRepository.findById(userInfoDTO.getId());
-            if (optionalUserInfo.isPresent()){
-                UserInfo userInfo = optionalUserInfo.get();
+            UserInfo userInfo = userInfoMapper.selectById(userInfoDTO.getId());
+            if (userInfo != null){
                 userInfo.setMobile(userInfoDTO.getMobile());
-                userInfoRepository.save(userInfo);
+                userInfoMapper.update(userInfo,new QueryWrapper<UserInfo>().eq("id",userInfoDTO.getId()));
             }else{
                 return new Result(ResultTypeEnum.SUCCESS.toValue(),"用户不存在",null);
             }
@@ -66,7 +64,7 @@ public class UserInfoServiceImpl implements UserInfoService {
     public Result delete(UserInfoDTO userInfoDTO) {
         if (userInfoDTO.getIds() != null && userInfoDTO.getIds().length > 0){
             for (Long id : userInfoDTO.getIds()) {
-                userInfoRepository.deleteById(id);
+                userInfoMapper.deleteById(id);
             }
         }else{
             return new Result().setCode(ResultTypeEnum.FAIL.toValue()).setMsg("参数错误");

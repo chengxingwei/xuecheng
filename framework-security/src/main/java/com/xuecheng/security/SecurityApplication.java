@@ -1,5 +1,6 @@
 package com.xuecheng.security;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
@@ -16,6 +17,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableDiscoveryClient //服务发现
 @EnableCircuitBreaker//对hystrixR熔断机制的支持
 @EntityScan("com.xuecheng.entities")
+@MapperScan("com.xuecheng.security.mapper")
 @EnableAuthorizationServer
 //@EnableWebSecurity
 public class SecurityApplication {
