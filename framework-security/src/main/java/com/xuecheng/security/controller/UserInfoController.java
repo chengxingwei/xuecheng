@@ -6,6 +6,8 @@ import com.xuecheng.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.security.Principal;
+
 @RestController
 @RequestMapping("/userinfo")
 public class UserInfoController {
@@ -28,8 +30,16 @@ public class UserInfoController {
         return userInfoService.save(userInfoDTO);
     }
 
-    @DeleteMapping
+    @PostMapping("/delete")
     public Result delete(@RequestBody UserInfoDTO userInfoDTO){
         return userInfoService.delete(userInfoDTO);
     }
+
+    @RequestMapping(value = "/current", method = RequestMethod.GET,produces = "application/json; charset=utf-8")
+    public Result getUser(Principal principal) {
+        Result result = new Result();
+        result.setCode(0).setData(principal);
+        return result;
+    }
+
 }

@@ -23,7 +23,6 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoMapper,UserInfo> im
     @Autowired
     private UserInfoMapper userInfoMapper;
 
-
     @Override
     public Result list(UserInfoDTO userInfoDTO) {
         Result resultUtil = new Result();

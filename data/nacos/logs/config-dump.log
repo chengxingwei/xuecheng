@@ -2,3 +2,11 @@
 
 2019-10-24 14:40:35,310 INFO [dump-all-ok] framework-security.yml+DEFAULT_GROUP, 1571756914000, length=1970, md5=d94e2c7f4623b1f88056b6c449fe2c3b
 
+2019-11-09 09:54:23,973 INFO [dump-all-ok] framework-gateway.yml+DEFAULT_GROUP, 1571560786000, length=864, md5=6148ef671dfcb3c643c54839b34b70e1
+
+2019-11-09 09:54:23,977 INFO [dump-all-ok] framework-security.yml+DEFAULT_GROUP, 1571901318000, length=1976, md5=4e8e9124ad55ff2ca219e5d7a6a60bff
+
+2019-11-09 13:16:01,026 WARN [dump-ignore] ignore to save cache file. groupKey=framework-security.yml+DEFAULT_GROUP+a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, md5=149d3e95f0a104f2475dc083ac7f166c, lastModifiedOld=1573276371572, lastModifiedNew=1573276560083
+
+2019-11-09 13:16:12,316 WARN [dump-ignore] ignore to save cache file. groupKey=framework-security.yml+DEFAULT_GROUP+a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, md5=149d3e95f0a104f2475dc083ac7f166c, lastModifiedOld=1573276371572, lastModifiedNew=1573276571316
+

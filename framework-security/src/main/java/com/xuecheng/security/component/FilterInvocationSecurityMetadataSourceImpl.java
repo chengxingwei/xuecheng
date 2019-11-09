@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.xuecheng.entities.system.Menu;
 import com.xuecheng.entities.system.Role;
 import com.xuecheng.entities.system.RoleMenu;
+import com.xuecheng.security.dto.RoleDTO;
+import com.xuecheng.security.dto.RoleMenuDTO;
 import com.xuecheng.security.mapper.MenuMapper;
 import com.xuecheng.security.mapper.RoleMapper;
 import com.xuecheng.security.mapper.RoleMenuMapper;
@@ -52,16 +54,14 @@ public class FilterInvocationSecurityMetadataSourceImpl  implements FilterInvoca
             return SecurityConfig.createList("ROLE_LOGIN");
         }
         //将resource所需要到的roles按框架要求封装返回（ResourceService里面的getRoles方法是基于RoleRepository实现的）
-        List<RoleMenu> roleMenus = roleMenuMapper.selectList(new QueryWrapper<RoleMenu>().eq("MenuID",menu.getId()));
-        List<Long> roleIds = new ArrayList<>();
-        for (RoleMenu roleMenu : roleMenus) {
-            roleIds.add(roleMenu.getRoleID());
-        }
-        List<Role> roles = roleMapper.selectBatchIds(roleIds);
+
+        RoleDTO dto = new RoleDTO();
+        dto.setMenuId(menu.getId());
+        List<Role> roles = roleMapper.findRolesByMenu(dto);
         int size = roles.size();
         String[] values = new String[size];
         for (int i = 0; i < size; i++) {
-            values[i] = roles.get(i).getRoleName();
+            values[i] = roles.get(i).getId().toString();
         }
         return SecurityConfig.createList(values);
     }

@@ -5,6 +5,18 @@
 <mapper namespace="com.xuecheng.security.mapper.UserInfoMapper">
     <select id="list" resultType="com.xuecheng.entities.system.UserInfo" parameterType="com.xuecheng.security.dto.UserInfoDTO">
         select *  FROM xc_userinfo where 1 = 1
+        <if test="userName != null">
+            and UserName like '%${userName}%'
+        </if>
+        <if test="status != null">
+            and Status = #{status}
+        </if>
+        <if test="nickName != null">
+            and NickName like '%${nickName}%'
+        </if>
+        <if test="realName != null">
+            and RealName like '%${realName}%'
+        </if>
     </select>
 </mapper>
 

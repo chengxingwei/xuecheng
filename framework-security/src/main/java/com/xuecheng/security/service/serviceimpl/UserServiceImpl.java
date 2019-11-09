@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.xuecheng.entities.system.Role;
 import com.xuecheng.entities.system.UserInfo;
 import com.xuecheng.entities.system.UserRole;
+import com.xuecheng.security.dto.RoleDTO;
 import com.xuecheng.security.mapper.RoleMapper;
 import com.xuecheng.security.mapper.UserInfoMapper;
 import com.xuecheng.security.mapper.UserRoleMapper;
@@ -40,17 +41,9 @@ public class UserServiceImpl implements UserDetailsService {
         }
         //查到User后将其封装为UserDetails的实现类的实例供程序调用
         //用该User和它对应的Role实体们构造UserDetails的实现类
-        List<UserRole> userRoles = userRoleMapper.selectList(new QueryWrapper<UserRole>().eq("userId",userInfo.getId()));
-        List<Long> roleIds = new ArrayList<>();
-        if (userRoles != null){
-            for (UserRole userRole:userRoles
-                 ) {
-                if (userRole != null){
-                    roleIds.add(userRole.getRoleID());
-                }
-            }
-        }
-        List<Role> roles = roleMapper.selectBatchIds(roleIds);
+        RoleDTO roleDTO = new RoleDTO();
+        roleDTO.setUserId(userInfo.getId());
+        List<Role> roles = roleMapper.findRolesByUser(roleDTO);
         return new UserDetailsImpl(userInfo,new ArrayList<>(roles));
     }
 }

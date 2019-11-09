@@ -2,41 +2,40 @@ package com.xuecheng.security.controller;
 
 import com.xuecheng.api.RoleClientService;
 import com.xuecheng.entities.system.Role;
+import com.xuecheng.security.dto.RoleDTO;
+import com.xuecheng.security.dto.UserInfoDTO;
+import com.xuecheng.security.service.RoleService;
+import com.xuecheng.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.util.List;
 
 @RestController
+@RequestMapping("/role")
 public class RoleController {
 
     @Autowired
-    RoleClientService roleClientService;
+    RoleService roleService;
 
-    @RequestMapping(value = "/security/rolelist",method = RequestMethod.GET)
-    public List<Role> roleList(){
-        return roleClientService.roleList();
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    public Result roleList(RoleDTO roleDTO){
+        return roleService.list(roleDTO);
     }
 
 
-    @RequestMapping(value = "/security/getRole",method = RequestMethod.GET)
-    public Role getRole(){
-        return new Role();
+    @PostMapping("/save")
+    public Result save(@RequestBody RoleDTO roleDTO ){
+        return roleService.save(roleDTO);
     }
 
 
-    @RequestMapping(value = "/user/login",method = RequestMethod.POST)
-    public void login(@Param("username") String username,@Param("password") String password){
-        System.out.println("username:"+username+";password:"+password);
+
+    @PostMapping("/delete")
+    public Result delete(@RequestBody RoleDTO roleDTO){
+        return roleService.delete(roleDTO);
     }
 
-    @RequestMapping(value = "/users/current", method = RequestMethod.GET,produces = "application/json; charset=utf-8")
-    public Principal getUser(Principal principal) {
-        System.out.println("sdfsdfsdf");
-        return principal;
-    }
 }

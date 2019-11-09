@@ -3,5 +3,31 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.xuecheng.security.mapper.RoleMapper">
+    <select id="findRolesByUser" resultType="com.xuecheng.entities.system.Role" parameterType="com.xuecheng.security.dto.RoleDTO">
+        SELECT xc_role.* FROM xc_user_role,xc_role
+WHERE xc_user_role.RoleID = xc_role.ID
+AND xc_user_role.UserInfoID=#{userId}
+    </select>
+    <select id="findRolesByMenu" resultType="com.xuecheng.entities.system.Role" parameterType="com.xuecheng.security.dto.RoleDTO">
+        select xc_role.* from xc_role_menu,xc_role
+        WHERE xc_role_menu.RoleID = xc_role.ID
+        AND xc_role_menu.MenuID = #{menuId}
+    </select>
 
+
+    <select id="list" resultType="com.xuecheng.entities.system.Role" parameterType="com.xuecheng.security.dto.RoleDTO">
+        select *  FROM xc_role where 1 = 1
+        <if test="userName != null">
+            and UserName like '%${userName}%'
+        </if>
+        <if test="status != null">
+            and Status = #{status}
+        </if>
+        <if test="nickName != null">
+            and NickName like '%${nickName}%'
+        </if>
+        <if test="realName != null">
+            and RealName like '%${realName}%'
+        </if>
+    </select>
 </mapper>
