@@ -1,0 +1,202 @@
+2019-10-20 16:29:13,408 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-20 16:31:45,530 INFO DEFAULT_GROUP@@framework-security is changed, add it to push queue.
+
+2019-10-20 16:40:11,003 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-20 16:40:11,004 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:64362, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,64362,111012403719329
+
+2019-10-20 16:40:11,004 INFO send udp packet: 192.168.100.1,64362,111012403719329
+
+2019-10-20 16:40:11,005 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:54181, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,54181,111012403719329
+
+2019-10-20 16:40:11,006 INFO send udp packet: 192.168.100.1,54181,111012403719329
+
+2019-10-20 16:40:11,013 INFO received ack: {"type": "push-ack", "lastRefTime":"111012403719329", "data":""} from: 192.168.100.1:, cost: 64362 ms, unacked: 9, total push: 1
+
+2019-10-20 16:40:11,015 INFO received ack: {"type": "push-ack", "lastRefTime":"111012403719329", "data":""} from: 192.168.100.1:, cost: 54181 ms, unacked: 9, total push: 0
+
+2019-10-21 21:31:00,295 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 21:35:20,507 INFO DEFAULT_GROUP@@framework-security is changed, add it to push queue.
+
+2019-10-21 22:31:52,962 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 22:31:52,970 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:55519, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,55519,45129587717118
+
+2019-10-21 22:31:52,972 INFO send udp packet: 192.168.100.1,55519,45129587717118
+
+2019-10-21 22:31:53,086 INFO received ack: {"type": "push-ack", "lastRefTime":"45129587717118", "data":""} from: 192.168.100.1:, cost: 55519 ms, unacked: 114, total push: 0
+
+2019-10-21 22:32:09,084 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 22:32:09,085 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:55519, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,55519,45145709286317
+
+2019-10-21 22:32:09,085 INFO send udp packet: 192.168.100.1,55519,45145709286317
+
+2019-10-21 22:32:09,125 INFO received ack: {"type": "push-ack", "lastRefTime":"45145709286317", "data":""} from: 192.168.100.1:, cost: 55519 ms, unacked: 40, total push: 0
+
+2019-10-21 22:39:22,902 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 22:39:22,902 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:55519, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,55519,45579527836449
+
+2019-10-21 22:39:22,914 INFO send udp packet: 192.168.100.1,55519,45579527836449
+
+2019-10-21 22:39:22,932 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:58982, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,58982,45579527836449
+
+2019-10-21 22:39:22,932 INFO send udp packet: 192.168.100.1,58982,45579527836449
+
+2019-10-21 22:39:22,978 INFO received ack: {"type": "push-ack", "lastRefTime":"45579527836449", "data":""} from: 192.168.100.1:, cost: 58982 ms, unacked: 46, total push: 1
+
+2019-10-21 22:39:23,184 INFO received ack: {"type": "push-ack", "lastRefTime":"45579527836449", "data":""} from: 192.168.100.1:, cost: 55519 ms, unacked: 281, total push: 0
+
+2019-10-21 22:55:50,059 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 22:55:50,060 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:55519, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,55519,46566684416904
+
+2019-10-21 22:55:50,065 INFO send udp packet: 192.168.100.1,55519,46566684416904
+
+2019-10-21 22:55:50,071 INFO received ack: {"type": "push-ack", "lastRefTime":"46566684416904", "data":""} from: 192.168.100.1:, cost: 55519 ms, unacked: 10, total push: 0
+
+2019-10-21 22:55:52,065 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 22:55:52,065 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:55519, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,55519,46568690055330
+
+2019-10-21 22:55:52,065 INFO send udp packet: 192.168.100.1,55519,46568690055330
+
+2019-10-21 22:55:52,065 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:56462, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,56462,46568690055330
+
+2019-10-21 22:55:52,065 INFO send udp packet: 192.168.100.1,56462,46568690055330
+
+2019-10-21 22:55:52,066 INFO received ack: {"type": "push-ack", "lastRefTime":"46568690055330", "data":""} from: 192.168.100.1:, cost: 55519 ms, unacked: 1, total push: 1
+
+2019-10-21 22:55:52,075 INFO received ack: {"type": "push-ack", "lastRefTime":"46568690055330", "data":""} from: 192.168.100.1:, cost: 56462 ms, unacked: 10, total push: 0
+
+2019-10-21 22:55:56,499 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 22:55:56,501 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:55519, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,55519,46573125116578
+
+2019-10-21 22:55:56,501 INFO send udp packet: 192.168.100.1,55519,46573125116578
+
+2019-10-21 22:55:56,513 INFO received ack: {"type": "push-ack", "lastRefTime":"46573125116578", "data":""} from: 192.168.100.1:, cost: 55519 ms, unacked: 12, total push: 0
+
+2019-10-21 22:55:56,517 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:56462, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,56462,46573125116578
+
+2019-10-21 22:55:56,518 INFO send udp packet: 192.168.100.1,56462,46573125116578
+
+2019-10-21 22:55:56,602 INFO received ack: {"type": "push-ack", "lastRefTime":"46573125116578", "data":""} from: 192.168.100.1:, cost: 56462 ms, unacked: 84, total push: 0
+
+2019-10-21 23:10:24,266 INFO DEFAULT_GROUP@@framework-security is changed, add it to push queue.
+
+2019-10-21 23:10:24,266 INFO serviceName: DEFAULT_GROUP@@framework-security changed, schedule push for: 192.168.100.1:56462, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,56462,47440891257248
+
+2019-10-21 23:10:24,266 INFO send udp packet: 192.168.100.1,56462,47440891257248
+
+2019-10-21 23:10:24,270 INFO received ack: {"type": "push-ack", "lastRefTime":"47440891257248", "data":""} from: 192.168.100.1:, cost: 56462 ms, unacked: 4, total push: 0
+
+2019-10-21 23:10:39,300 INFO DEFAULT_GROUP@@framework-security is changed, add it to push queue.
+
+2019-10-21 23:10:39,300 INFO serviceName: DEFAULT_GROUP@@framework-security changed, schedule push for: 192.168.100.1:56462, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,56462,47455925517494
+
+2019-10-21 23:10:39,300 INFO send udp packet: 192.168.100.1,56462,47455925517494
+
+2019-10-21 23:10:39,317 INFO received ack: {"type": "push-ack", "lastRefTime":"47455925517494", "data":""} from: 192.168.100.1:, cost: 56462 ms, unacked: 17, total push: 0
+
+2019-10-21 23:11:00,277 INFO DEFAULT_GROUP@@framework-security is changed, add it to push queue.
+
+2019-10-21 23:11:00,278 INFO serviceName: DEFAULT_GROUP@@framework-security changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,47476902909417
+
+2019-10-21 23:11:00,278 INFO send udp packet: 192.168.100.1,60729,47476902909417
+
+2019-10-21 23:11:00,278 INFO serviceName: DEFAULT_GROUP@@framework-security changed, schedule push for: 192.168.100.1:56462, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,56462,47476902909417
+
+2019-10-21 23:11:00,278 INFO send udp packet: 192.168.100.1,56462,47476902909417
+
+2019-10-21 23:11:00,288 INFO received ack: {"type": "push-ack", "lastRefTime":"47476902909417", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 10, total push: 1
+
+2019-10-21 23:11:00,302 INFO received ack: {"type": "push-ack", "lastRefTime":"47476902909417", "data":""} from: 192.168.100.1:, cost: 56462 ms, unacked: 24, total push: 0
+
+2019-10-21 23:11:35,715 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:11:35,715 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,47512339943906
+
+2019-10-21 23:11:35,715 INFO send udp packet: 192.168.100.1,60729,47512339943906
+
+2019-10-21 23:11:35,717 INFO received ack: {"type": "push-ack", "lastRefTime":"47512339943906", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 1, total push: 0
+
+2019-10-21 23:11:35,720 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60733, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60733,47512339943906
+
+2019-10-21 23:11:35,720 INFO send udp packet: 192.168.100.1,60733,47512339943906
+
+2019-10-21 23:11:35,727 INFO received ack: {"type": "push-ack", "lastRefTime":"47512339943906", "data":""} from: 192.168.100.1:, cost: 60733 ms, unacked: 7, total push: 0
+
+2019-10-21 23:20:20,830 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:20:20,831 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,48037455683622
+
+2019-10-21 23:20:20,831 INFO send udp packet: 192.168.100.1,60729,48037455683622
+
+2019-10-21 23:20:20,833 INFO received ack: {"type": "push-ack", "lastRefTime":"48037455683622", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 2, total push: 0
+
+2019-10-21 23:20:25,184 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:20:25,185 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,48041809666769
+
+2019-10-21 23:20:25,185 INFO send udp packet: 192.168.100.1,60729,48041809666769
+
+2019-10-21 23:20:25,186 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:54552, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,54552,48041809666769
+
+2019-10-21 23:20:25,186 INFO send udp packet: 192.168.100.1,54552,48041809666769
+
+2019-10-21 23:20:25,187 INFO received ack: {"type": "push-ack", "lastRefTime":"48041809666769", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 2, total push: 1
+
+2019-10-21 23:20:25,198 INFO received ack: {"type": "push-ack", "lastRefTime":"48041809666769", "data":""} from: 192.168.100.1:, cost: 54552 ms, unacked: 12, total push: 0
+
+2019-10-21 23:20:29,512 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:20:29,514 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,48046138100099
+
+2019-10-21 23:20:29,514 INFO send udp packet: 192.168.100.1,60729,48046138100099
+
+2019-10-21 23:20:29,515 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:54552, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,54552,48046138100099
+
+2019-10-21 23:20:29,516 INFO send udp packet: 192.168.100.1,54552,48046138100099
+
+2019-10-21 23:20:29,520 INFO received ack: {"type": "push-ack", "lastRefTime":"48046138100099", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 6, total push: 1
+
+2019-10-21 23:20:29,536 INFO received ack: {"type": "push-ack", "lastRefTime":"48046138100099", "data":""} from: 192.168.100.1:, cost: 54552 ms, unacked: 20, total push: 0
+
+2019-10-21 23:24:11,056 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:24:11,058 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,48267682485952
+
+2019-10-21 23:24:11,058 INFO send udp packet: 192.168.100.1,60729,48267682485952
+
+2019-10-21 23:24:11,064 INFO received ack: {"type": "push-ack", "lastRefTime":"48267682485952", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 5, total push: 0
+
+2019-10-21 23:24:26,077 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:24:26,078 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,48282702903678
+
+2019-10-21 23:24:26,078 INFO send udp packet: 192.168.100.1,60729,48282702903678
+
+2019-10-21 23:24:26,108 INFO received ack: {"type": "push-ack", "lastRefTime":"48282702903678", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 30, total push: 0
+
+2019-10-21 23:24:55,263 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:24:55,263 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:57694, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,57694,48311888244902
+
+2019-10-21 23:24:55,263 INFO send udp packet: 192.168.100.1,57694,48311888244902
+
+2019-10-21 23:24:55,264 INFO serviceName: DEFAULT_GROUP@@framework-gateway changed, schedule push for: 192.168.100.1:60729, agent: Nacos-Java-Client:v1.0.0, key: 192.168.100.1,60729,48311888244902
+
+2019-10-21 23:24:55,264 INFO send udp packet: 192.168.100.1,60729,48311888244902
+
+2019-10-21 23:24:55,269 INFO received ack: {"type": "push-ack", "lastRefTime":"48311888244902", "data":""} from: 192.168.100.1:, cost: 57694 ms, unacked: 6, total push: 1
+
+2019-10-21 23:24:55,275 INFO received ack: {"type": "push-ack", "lastRefTime":"48311888244902", "data":""} from: 192.168.100.1:, cost: 60729 ms, unacked: 11, total push: 0
+
+2019-10-21 23:28:36,195 INFO DEFAULT_GROUP@@framework-gateway is changed, add it to push queue.
+
+2019-10-21 23:28:40,154 INFO DEFAULT_GROUP@@framework-security is changed, add it to push queue.
+

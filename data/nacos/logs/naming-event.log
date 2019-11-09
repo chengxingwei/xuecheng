@@ -1,0 +1,20 @@
+2019-10-24 15:04:07,175 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.101:9999:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-24 15:04:07,232 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 192.168.1.101:9999_true,
+
+2019-10-24 15:13:44,554 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.1.101:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2019-10-24 15:13:44,555 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.1.101:8001_true,
+
+2019-10-24 15:43:24,869 INFO {POS} {IP-DISABLED} valid: 192.168.1.101:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1571902988923
+
+2019-10-24 15:43:41,564 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.101:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2019-10-24 15:43:41,564 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 
+
+2019-10-24 15:46:10,544 INFO {POS} {IP-DISABLED} valid: 192.168.1.101:9999@DEFAULT@DEFAULT_GROUP@@framework-gateway, region: unknown, msg: client timeout after 15000, last beat: 1571903155116
+
+2019-10-24 15:46:25,567 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.1.101:9999:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2019-10-24 15:46:25,567 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 
+
