@@ -1,4 +1,4 @@
-package com.xuecheng.dto;
+package com.xuecheng.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,19 +6,13 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 import java.io.Serializable;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Accessors(chain = true)
-public class BaseDTO implements Serializable {
-
-    /**
-     * 当前页
-     */
-    private Integer pageIndex = 1;
-
-    /**
-     * 页码大小
-     */
-    private Integer pageSize = 10;
+public class Pagination implements Serializable {
+    private Long total;
+    private Integer pageSize;
+    private Integer current;
 }

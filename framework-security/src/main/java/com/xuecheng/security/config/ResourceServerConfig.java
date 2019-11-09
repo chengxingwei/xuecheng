@@ -17,9 +17,11 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .exceptionHandling()
                 .authenticationEntryPoint(null)
                 .and()
-                .authorizeRequests().anyRequest().authenticated()
+                .authorizeRequests().antMatchers("/oauth/**",
+                "/token/**",
+                "/actuator/**").permitAll().anyRequest().authenticated()
                 .and()
-                .httpBasic();
+                .httpBasic().disable();
     }
 
 }

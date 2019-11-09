@@ -1,5 +1,6 @@
 package com.xuecheng.security.service.serviceimpl;
 
+import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.xuecheng.entities.system.UserInfo;
 import com.xuecheng.enums.ResultTypeEnum;
@@ -7,7 +8,8 @@ import com.xuecheng.security.dto.UserInfoDTO;
 import com.xuecheng.security.mapper.UserInfoMapper;
 import com.xuecheng.security.repository.UserInfoRepository;
 import com.xuecheng.security.service.UserInfoService;
-import com.xuecheng.utils.ResultUtil;
+import com.xuecheng.utils.Pagination;
+import com.xuecheng.utils.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -24,17 +26,24 @@ public class UserInfoServiceImpl implements UserInfoService {
     private UserInfoRepository userInfoRepository;
 
     @Override
-    public List<UserInfo> list(UserInfoDTO userInfoDTO) {
+    public Result list(UserInfoDTO userInfoDTO) {
+        Result resultUtil = new Result();
+        resultUtil.setCode(0);
         if (Objects.equals(0,userInfoDTO.getPageIndex())){//不分页
-            return userInfoMapper.list(userInfoDTO);
+            resultUtil.setData(userInfoMapper.list(userInfoDTO));
         }else{//分页
-            PageHelper.startPage(2,3);
-            return userInfoMapper.list(userInfoDTO);
+            Page page = PageHelper.startPage(userInfoDTO.getPageIndex(),userInfoDTO.getPageSize());
+            List<UserInfo> userInfos = userInfoMapper.list(userInfoDTO);
+            resultUtil.setData(userInfos);
+            Pagination pagination = new Pagination();
+            pagination.setTotal(page.getTotal()).setCurrent(userInfoDTO.getPageIndex()).setPageSize(userInfoDTO.getPageSize());
+            resultUtil.setPagination(pagination);
         }
+        return resultUtil;
     }
 
     @Override
-    public ResultUtil save(UserInfoDTO userInfoDTO) {
+    public Result save(UserInfoDTO userInfoDTO) {
         if (userInfoDTO.getId() == null){//添加
             UserInfo userInfo = new UserInfo();
             userInfo.setUserName(userInfoDTO.getUserName())
@@ -47,21 +56,21 @@ public class UserInfoServiceImpl implements UserInfoService {
                 userInfo.setMobile(userInfoDTO.getMobile());
                 userInfoRepository.save(userInfo);
             }else{
-                return new ResultUtil(ResultTypeEnum.SUCCESS.toValue(),"用户不存在",null);
+                return new Result(ResultTypeEnum.SUCCESS.toValue(),"用户不存在",null);
             }
         }
-        return new ResultUtil(null);
+        return new Result(null);
     }
 
     @Override
-    public ResultUtil delete(UserInfoDTO userInfoDTO) {
+    public Result delete(UserInfoDTO userInfoDTO) {
         if (userInfoDTO.getIds() != null && userInfoDTO.getIds().length > 0){
             for (Long id : userInfoDTO.getIds()) {
                 userInfoRepository.deleteById(id);
             }
         }else{
-            return new ResultUtil().setCode(ResultTypeEnum.FAIL.toValue()).setMsg("参数错误");
+            return new Result().setCode(ResultTypeEnum.FAIL.toValue()).setMsg("参数错误");
         }
-        return new ResultUtil().setMsg("操作成功");
+        return new Result().setMsg("操作成功");
     }
 }

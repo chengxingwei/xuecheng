@@ -12,7 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Data
 @Accessors(chain = true)
-public class ResultUtil implements Serializable {
+public class Result implements Serializable {
     /**
      * 0成功 1失败
      */
@@ -28,12 +28,18 @@ public class ResultUtil implements Serializable {
      */
     private Object data;
 
-    public ResultUtil(Object data){
+    private Pagination pagination;
+
+    public Result(Object data){
         this.code = ResultTypeEnum.SUCCESS.toValue();
         this.data = data;
     }
-
-    public ResultUtil(){
+    public Result(Integer code, String msg, Object data){
+        this.code = code;
+        this.data = data;
+        this.msg = msg;
+    }
+    public Result(){
         this.code = ResultTypeEnum.SUCCESS.toValue();
     }
 

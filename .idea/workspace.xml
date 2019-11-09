@@ -2,52 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93aa4689-9b5e-4a9f-a1d4-11fb51c17ea8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dangdang_elastic_job_common_core_2_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dangdang_elastic_job_lite_core_2_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dangdang_elastic_job_lite_spring_2_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_spotbugs_spotbugs_annotations_3_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_yetus_audience_annotations_0_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_2_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/ElasticJobApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/config/JobEventConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/config/RegistryCenterConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/controller/JobController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/dao/ElasticJobConfigDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/entity/ElasticJobConfigBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/entity/ElasticJobConfigLogBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/runner/ElasticJobRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/service/ElasticJobService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/task/DemoDataflowJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/task/DemoSimpleJob.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/util/BeanTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-elastic-job/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/KafkaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/KafkaReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/KafkaSender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/controller/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framework-kafka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Pagination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/vo/BaseVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework-parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework-parent/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/SecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/CorsFilterConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/CorsFilterConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/ResourceServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/ResourceServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/ResultUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Result.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/framework-provider-activiti/target/" />
     <ignored path="$PROJECT_DIR$/framework-parent/target/" />
@@ -70,114 +38,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DemoSimpleJob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/task/DemoSimpleJob.java">
+      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="20" column="61" selection-start-line="20" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="650">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/controller/JobController.java">
+      <file leaf-file-name="UserInfoServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1992#1993#0" expanded="true" />
-                <element signature="e#2034#2035#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1248">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobEventConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/config/JobEventConfig.java">
+      <file leaf-file-name="PageHelper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/PageHelper.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElasticJobRunner.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/runner/ElasticJobRunner.java">
+      <file leaf-file-name="UserInfoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="134" column="120" selection-start-line="134" selection-start-column="120" selection-end-line="134" selection-end-column="120" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="130">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JobScheduler.class" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/com/dangdang/elastic-job-lite-core/2.1.5/elastic-job-lite-core-2.1.5.jar!/com/dangdang/ddframe/job/lite/api/JobScheduler.class">
+      <file leaf-file-name="Pageable.class" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/org/springframework/data/spring-data-commons/2.1.4.RELEASE/spring-data-commons-2.1.4.RELEASE.jar!/org/springframework/data/domain/Pageable.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+            <state relative-caret-position="338">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElasticJobService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/service/ElasticJobService.java">
+      <file leaf-file-name="GatewayApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/GatewayApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1482">
-              <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="208">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElasticJobApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/ElasticJobApplication.java">
+      <file leaf-file-name="SecurityApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/SecurityApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="104">
-              <caret line="4" column="67" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="67" />
+              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/vo/BaseVO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding>
-                <element signature="e#258#259#0" expanded="true" />
-                <element signature="e#329#330#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BeanTools.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/util/BeanTools.java">
+      <file leaf-file-name="Pagination.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Pagination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="234">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ElasticJobConfigDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/dao/ElasticJobConfigDao.java">
+      <file leaf-file-name="ExcelWriteImage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/ExcelWriteImage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5070">
-              <caret line="195" column="15" selection-start-line="195" selection-start-column="15" selection-end-line="195" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="104">
+              <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -209,6 +161,7 @@
       <find>DemoSimpleJob</find>
       <find>curator-framework</find>
       <find>jobScheduler</find>
+      <find>server_err</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,11 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/framework-gateway/src/main/resources/bootstrap.yml" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/AuthorizationServerConfig.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/repository/a.java" />
-        <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Role.java" />
         <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/component/FilterInvocationSecurityMetadataSourceImpl.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/repository/RoleRepository.java" />
@@ -233,16 +181,10 @@
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/repository/MenuRepository.java" />
         <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/enums/ResultTypeEnum.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/BaseDTO.java" />
-        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml" />
         <option value="$PROJECT_DIR$/framework-security/pom.xml" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java" />
-        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/ResultUtil.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/App.java" />
         <option value="$PROJECT_DIR$/framework-kafka/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/Message.java" />
@@ -265,6 +207,20 @@
         <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/util/BeanTools.java" />
         <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/config/RegistryCenterConfig.java" />
         <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/runner/ElasticJobRunner.java" />
+        <option value="$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/config/CorsConfig.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/CorsFilterConfig.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/SecurityApplication.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Pagination.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/vo/BaseVO.java" />
+        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/ResultUtil.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Result.java" />
       </list>
     </option>
   </component>
@@ -286,11 +242,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="framework-elastic-job" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="framework-utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="framework-elastic-job" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="framework-utils" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -314,146 +270,55 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-              <item name="runner" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-              <item name="task" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticjob" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-elastic-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-entities" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="xuecheng" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -472,6 +337,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32254696" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -492,7 +358,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ElasticJobApplication">
+  <component name="RunManager" selected="Application.SecurityApplication">
     <configuration name="ElasticJobApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xuecheng.elasticjob.ElasticJobApplication" />
       <module name="framework-elastic-job" />
@@ -504,19 +370,19 @@
         </pattern>
       </extension>
     </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xuecheng.security.repository.a" />
+    <configuration name="SecurityApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xuecheng.security.SecurityApplication" />
       <module name="framework-security" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xuecheng.security.repository.*" />
+          <option name="PATTERN" value="com.xuecheng.security.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -533,10 +399,6 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
-    </configuration>
-    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="framework-security" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xuecheng.security.App" />
     </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="framework-gateway" />
@@ -581,18 +443,17 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="Spring Boot.App" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Application.a" />
-      <item itemvalue="Spring Boot.KafkaApplication" />
       <item itemvalue="Application.ElasticJobApplication" />
+      <item itemvalue="Application.SecurityApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.KafkaApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SecurityApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
         <item itemvalue="Application.ElasticJobApplication" />
         <item itemvalue="Spring Boot.KafkaApplication" />
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Application.a" />
       </list>
     </recent_temporary>
   </component>
@@ -634,12 +495,31 @@
       <workItem from="1571460789156" duration="5039000" />
       <workItem from="1571467320169" duration="1534000" />
       <workItem from="1571470319508" duration="2032000" />
-      <workItem from="1571472679745" duration="164000" />
+      <workItem from="1571472679745" duration="479000" />
+      <workItem from="1571559977131" duration="4294000" />
+      <workItem from="1571618291293" duration="173000" />
+      <workItem from="1571664113807" duration="4922000" />
+      <workItem from="1571700998604" duration="668000" />
+      <workItem from="1571704705742" duration="37000" />
+      <workItem from="1571720025061" duration="2018000" />
+      <workItem from="1571742436773" duration="1947000" />
+      <workItem from="1571747228643" duration="5967000" />
+      <workItem from="1571756492988" duration="3230000" />
+      <workItem from="1571790975297" duration="116000" />
+      <workItem from="1571831935494" duration="62000" />
+      <workItem from="1571835452376" duration="7214000" />
+      <workItem from="1571877263215" duration="105000" />
+      <workItem from="1571899956924" duration="2783000" />
+      <workItem from="1571963883175" duration="40000" />
+      <workItem from="1572081534662" duration="20000" />
+      <workItem from="1572097507645" duration="691000" />
+      <workItem from="1572098246264" duration="100000" />
+      <workItem from="1572135195777" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62186000" />
+    <option name="totallyTimeSpent" value="96932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -647,34 +527,37 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003903" side_tool="true" weight="0.29812607" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.080405936" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.17486338" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Flutter Outline" order="4" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39011925" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3168654" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960968" weight="0.16183986" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960968" weight="0.36286202" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07338017" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1264637" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.21805792" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.22487223" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879046" />
     </layout>
@@ -713,168 +596,10 @@
           <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="57" />
+      <option name="time" value="58" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/org/springframework/data/spring-data-commons/2.1.4.RELEASE/spring-data-commons-2.1.4.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/java/jdk/src.zip!/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="22" selection-end-line="51" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-zipkin/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/resources/bootstrap.yml" />
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/GatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/ResultUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/org/springframework/boot/spring-boot-autoconfigure/2.1.2.RELEASE/spring-boot-autoconfigure-2.1.2.RELEASE.jar!/org/springframework/boot/autoconfigure/kafka/KafkaProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="740" column="20" selection-start-line="740" selection-start-column="20" selection-end-line="740" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/maven1.1/apache-maven-3.5.0/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3692">
-          <caret line="143" column="29" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/Message.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/KafkaSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-elastic-job/framework-elastic-job.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/App.java" />
-    <entry file="file://$PROJECT_DIR$/framework-kafka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="28" column="21" selection-start-line="25" selection-start-column="6" selection-end-line="28" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/component/KafkaReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/maven1.1/apache-maven-3.5.0/repository/com/github/kuhn-he/elastic-job-lite-spring-boot-starter/2.1.5/elastic-job-lite-spring-boot-starter-2.1.5.pom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-kafka/src/main/java/com/xuecheng/kafka/KafkaApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -891,13 +616,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/component/ElasticJobRunner.java" />
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/entity/ElasticJobConfigLogBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -970,23 +688,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/util/BeanTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
+        <state relative-caret-position="442">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/dao/ElasticJobConfigDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5070">
+        <state relative-caret-position="4758">
           <caret line="195" column="15" selection-start-line="195" selection-start-column="15" selection-end-line="195" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -994,22 +704,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
           <caret line="4" column="67" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="67" />
-          <folding>
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/service/ElasticJobService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
+        <state relative-caret-position="1248">
           <caret line="59" column="39" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1026,50 +727,231 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/config/JobEventConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
+        <state relative-caret-position="416">
           <caret line="37" column="33" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/controller/JobController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="1092">
           <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2034#2035#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/task/DemoSimpleJob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
+        <state relative-caret-position="364">
           <caret line="20" column="61" selection-start-line="20" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/com/dangdang/elastic-job-lite-core/2.1.5/elastic-job-lite-core-2.1.5.jar!/com/dangdang/ddframe/job/lite/api/JobScheduler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
+        <state relative-caret-position="1274">
           <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/runner/ElasticJobRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="134" column="120" selection-start-line="134" selection-start-column="120" selection-end-line="134" selection-end-column="120" />
+        <state relative-caret-position="2756">
+          <caret line="134" column="46" selection-start-line="134" selection-start-column="46" selection-end-line="134" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-kafka/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/config/GatewayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1716">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/component/AccessDecisionManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/component/AccessDeniedHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/org/springframework/security/spring-security-config/5.1.3.RELEASE/spring-security-config-5.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="59" column="22" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/CorsFilterConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/config/annotation/web/configurers/AuthorizationServerSecurityConfigurer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="82" column="63" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="71" column="12" lean-forward="true" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-293">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/ExcelWriteImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Pagination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/vo/BaseVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/PageHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/maven1.1/apache-maven-3.5.0/repository/org/springframework/data/spring-data-commons/2.1.4.RELEASE/spring-data-commons-2.1.4.RELEASE.jar!/org/springframework/data/domain/Pageable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-gateway/src/main/java/com/xuecheng/gateway/GatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/SecurityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
         </state>
       </provider>
     </entry>

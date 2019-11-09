@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
-import org.springframework.cloud.sleuth.instrument.web.TraceWebFilter;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
@@ -18,9 +17,9 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @EnableCircuitBreaker//对hystrixR熔断机制的支持
 @EntityScan("com.xuecheng.entities")
 @EnableAuthorizationServer
-@EnableWebSecurity
-public class App {
+//@EnableWebSecurity
+public class SecurityApplication {
     public static void main(String[] args){
-        SpringApplication.run(App.class,args);
+        SpringApplication.run(SecurityApplication.class,args);
     }
 }

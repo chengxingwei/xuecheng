@@ -69,6 +69,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .formLogin().and()
                 .csrf().disable()
                 .httpBasic();
+        http
+                .authorizeRequests()
+                .antMatchers(
+                        "/oauth/**",
+                        "/token/**",
+                        "/actuator/**").permitAll()
+                .anyRequest().authenticated()
+                .and().csrf().disable().httpBasic().disable();
+        ;
     }
 
 }

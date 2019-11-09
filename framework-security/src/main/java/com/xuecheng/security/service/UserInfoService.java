@@ -1,15 +1,12 @@
 package com.xuecheng.security.service;
 
-import com.xuecheng.entities.system.UserInfo;
 import com.xuecheng.security.dto.UserInfoDTO;
-import com.xuecheng.utils.ResultUtil;
-
-import java.util.List;
+import com.xuecheng.utils.Result;
 
 public interface UserInfoService {
-    public List<UserInfo> list(UserInfoDTO userInfoDTO);
+    public Result list(UserInfoDTO userInfoDTO);
 
-    public ResultUtil save(UserInfoDTO userInfoDTO);
+    public Result save(UserInfoDTO userInfoDTO);
 
-    public ResultUtil delete(UserInfoDTO userInfoDTO);
+    public Result delete(UserInfoDTO userInfoDTO);
 }
