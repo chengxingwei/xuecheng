@@ -38,7 +38,7 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper,Role> implements Rol
             List<Role> roles = roleMapper.list(roleDTO);
             result.setData(roles);
             Pagination pagination = new Pagination();
-            pagination.setTotal(page.getTotal()).setCurrent(roleDTO.getPageIndex()).setPageSize(userInfoDTO.getPageSize());
+            pagination.setTotal(page.getTotal()).setCurrent(roleDTO.getPageIndex()).setPageSize(roleDTO.getPageSize());
             result.setPagination(pagination);
         }
         return result;
