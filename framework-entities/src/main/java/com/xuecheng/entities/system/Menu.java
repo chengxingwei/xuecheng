@@ -2,6 +2,7 @@ package com.xuecheng.entities.system;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.*;
 import lombok.experimental.Accessors;
@@ -17,6 +18,7 @@ import java.util.Set;
 @Builder
 @Accessors(chain = true)
 @EqualsAndHashCode(callSuper = false)
+@TableName("xc_menu")
 public class Menu extends Model<Menu> {
 
     @TableId(value = "id", type = IdType.AUTO)
@@ -28,9 +30,11 @@ public class Menu extends Model<Menu> {
 
     private String menuPath;
 
-    private Long btnID;
+    private String btnID;
 
-    private Long menuType;
+    private Integer menuType;
+
+    private String btnName;
 
     @Override
     protected Serializable pkVal() {

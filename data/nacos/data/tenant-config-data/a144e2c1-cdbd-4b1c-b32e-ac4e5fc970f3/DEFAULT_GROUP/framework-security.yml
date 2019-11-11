@@ -5,6 +5,7 @@ mybatis-plus:
   mapper-locations:
     - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
   configuration:
+    map-underscore-to-camel-case: false
     cache-enabled: true
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 spring:
@@ -63,9 +64,9 @@ info:
 feign:
   hystrix:
     enabled: true
-# logging:
-#  level:
-#    root: debug
+logging:
+  level:
+    root: debug
 security:
   basic:
     enabled: false

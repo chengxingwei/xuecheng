@@ -44,6 +44,9 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 
+    public static void main(String[] args){
+        System.out.println(new BCryptPasswordEncoder().encode("123456"));
+    }
 
     //在这里配置哪些页面不需要认证
     @Override

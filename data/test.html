@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        var token = "";
+        $(function () {
+        });
+        function test() {
+            getToken();
+        }
+        function getToken(){
+            var params = {};
+            var url = "http://127.0.0.1:9999/security/oauth/token?client_id=client&grant_type=password&username=admin&password=123456&client_secret=123456";
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data))
+                }
+            });
+        }
+    </script>
+<body>
+<button id="btnTest" onclick="test()">测试</button>
+<div id="msg"></div>
+</body>
+</html>
