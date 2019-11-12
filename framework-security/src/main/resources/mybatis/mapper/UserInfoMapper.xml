@@ -3,8 +3,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.xuecheng.security.mapper.UserInfoMapper">
-    <select id="list" resultType="com.xuecheng.entities.system.UserInfo" parameterType="com.xuecheng.security.dto.UserInfoDTO">
-        select *  FROM xc_userinfo where 1 = 1
+    <select id="list" resultType="com.xuecheng.security.vo.UserInfoVO" parameterType="com.xuecheng.security.dto.UserInfoDTO">
+        SELECT
+        xc_userinfo.*, (
+        SELECT
+        concat(group_concat(xc_role.RoleName),'|',group_concat(xc_role.ID))
+        FROM
+        xc_user_role,
+        xc_role
+        WHERE
+        xc_userinfo.ID = xc_user_role.UserInfoID
+        AND xc_user_role.RoleID = xc_role.ID
+        ) roleNames
+        FROM
+        xc_userinfo
         <if test="userName != null">
             and UserName like '%${userName}%'
         </if>

@@ -13,6 +13,7 @@ import java.security.Principal;
 public class UserInfoController {
 
 
+
     @Autowired
     private UserInfoService userInfoService;
 
@@ -41,5 +42,11 @@ public class UserInfoController {
         result.setCode(0).setData(principal);
         return result;
     }
+
+    @PostMapping("/role")
+    public Result updateRoles(@RequestBody UserInfoDTO userInfoDTO ){
+        return userInfoService.updateRoles(userInfoDTO);
+    }
+
 
 }

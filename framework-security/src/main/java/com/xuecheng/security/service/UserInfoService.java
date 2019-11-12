@@ -12,4 +12,6 @@ public interface UserInfoService extends IService<UserInfo> {
     public Result save(UserInfoDTO userInfoDTO);
 
     public Result delete(UserInfoDTO userInfoDTO);
+
+    Result updateRoles(UserInfoDTO userInfoDTO);
 }

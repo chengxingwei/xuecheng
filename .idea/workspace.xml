@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93aa4689-9b5e-4a9f-a1d4-11fb51c17ea8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/MenuDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/MenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/vo/UserInfoVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_12.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/MenuMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/MenuMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/MenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/MenuMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/framework-provider-activiti/target/" />
     <ignored path="$PROJECT_DIR$/framework-parent/target/" />
@@ -25,71 +43,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java">
+      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="296">
+              <caret line="47" column="35" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="23" />
               <folding>
-                <element signature="e#1649#1650#0" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
-                <element signature="e#1744#1745#0" expanded="true" />
-                <element signature="e#1824#1825#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#632#633#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#929#930#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractUserDetailsAuthenticationProvider.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.class">
+      <file leaf-file-name="UserInfoService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1378">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="104">
+              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DaoAuthenticationProvider.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class">
+      <file leaf-file-name="UserInfoServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodProxy.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.4.RELEASE/spring-core-5.1.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35">
+              <caret line="104" selection-start-line="104" selection-end-line="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/MenuController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BCryptPasswordEncoder.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.1.3.RELEASE/spring-security-crypto-5.1.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+      <file leaf-file-name="UserInfoDTO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1144">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="208">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserInfo.java">
+      <file leaf-file-name="UserRole.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserRole.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="26" column="27" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="27" />
+            <state relative-caret-position="348">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/RoleController.java">
+      <file leaf-file-name="UserInfoVO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/vo/UserInfoVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="482">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,25 +133,16 @@
         <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
-              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BCrypt.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.1.3.RELEASE/spring-security-crypto-5.1.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCrypt.class">
+      <file leaf-file-name="UserInfoMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9256">
-              <caret line="355" column="28" selection-start-line="355" selection-start-column="28" selection-end-line="355" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSecurityConfigurerAdapter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.3.RELEASE/spring-security-config-5.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4368">
-              <caret line="234" selection-start-line="234" selection-end-line="234" />
+            <state relative-caret-position="390">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -152,6 +178,7 @@
       <find>ClientCredentialsTokenEndpointFilter</find>
       <find>real_name</find>
       <find>invalid_grant</find>
+      <find>pagehe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -160,12 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/component/ElasticJobRunner.java" />
-        <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/service/ElasticJobService.java" />
-        <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/controller/JobController.java" />
-        <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/dao/ElasticJobConfigDao.java" />
-        <option value="$PROJECT_DIR$/framework-elastic-job/pom.xml" />
-        <option value="$PROJECT_DIR$/framework-elastic-job/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/task/DemoSimpleJob.java" />
         <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/util/BeanTools.java" />
         <option value="$PROJECT_DIR$/framework-elastic-job/src/main/java/com/xuecheng/elasticjob/config/RegistryCenterConfig.java" />
@@ -181,13 +202,8 @@
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/SecurityApplication.java" />
         <option value="$PROJECT_DIR$/framework-entities/pom.xml" />
         <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Button.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/MenuMapper.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/MenuMapper.xml" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserRoleMapper.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserRoleMapper.xml" />
-        <option value="$PROJECT_DIR$/framework-security/pom.xml" />
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mybatis.cfg.xml" />
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/bootstrap.yml" />
@@ -196,21 +212,32 @@
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/RoleMenuMapper.xml" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/component/FilterInvocationSecurityMetadataSourceImpl.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/RoleService.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/RoleMapper.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/RoleMapper.xml" />
-        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/RoleController.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/RoleDTO.java" />
-        <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java" />
         <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Role.java" />
         <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/RoleMenu.java" />
         <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserRole.java" />
         <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserInfo.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/RoleServiceImpl.java" />
         <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/framework-security/pom.xml" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/MenuService.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/MenuMapper.java" />
+        <option value="$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/MenuMapper.xml" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/MenuController.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/MenuDTO.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/MenuServiceImpl.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/vo/UserInfoVO.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -246,7 +273,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -260,64 +287,53 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-entities" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-entities" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="framework-entities" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
+              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
               <item name="framework-security" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xuecheng" type="b2602c69:ProjectViewProjectNode" />
-              <item name="framework-security" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,7 +373,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SecurityApplication">
+  <component name="RunManager" selected="Spring Boot.SecurityApplication">
     <configuration name="ElasticJobApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xuecheng.elasticjob.ElasticJobApplication" />
       <module name="framework-elastic-job" />
@@ -476,8 +492,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SecurityApplication" />
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Application.SecurityApplication" />
         <item itemvalue="Application.WebSecurityConfig" />
         <item itemvalue="Application.ElasticJobApplication" />
         <item itemvalue="Spring Boot.KafkaApplication" />
@@ -548,19 +564,22 @@
       <workItem from="1573432390404" duration="513000" />
       <workItem from="1573437179533" duration="1583000" />
       <workItem from="1573468682247" duration="4500000" />
-      <workItem from="1573518466049" duration="487000" />
+      <workItem from="1573518466049" duration="1867000" />
+      <workItem from="1573534424740" duration="2205000" />
+      <workItem from="1573545705430" duration="1262000" />
+      <workItem from="1573551861491" duration="2605000" />
+      <workItem from="1573554504826" duration="5667000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121706000" />
+    <option name="totallyTimeSpent" value="134825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.500625" side_tool="true" weight="0.31592688" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50192803" side_tool="true" weight="0.42530283" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.174375" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
@@ -569,9 +588,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.499375" visible="true" weight="0.45953003" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49807197" visible="true" weight="0.27860028" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.22454308" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.4993573" weight="0.22341858" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
@@ -580,7 +599,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49960968" weight="0.36684072" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.244375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29177377" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -623,287 +642,15 @@
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/authentication/OAuth2AuthenticationManager.class</url>
-          <line>78</line>
-          <properties />
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="73" />
+      <option name="time" value="85" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/RoleMenuMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/RoleMenuDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/component/FilterInvocationSecurityMetadataSourceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="59" column="53" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="13" selection-start-line="5" selection-start-column="4" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/RoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/RoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/RoleService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/utils/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1430">
-          <caret line="70" column="43" selection-start-line="63" selection-start-column="8" selection-end-line="70" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Button.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-annotation/3.0-RELEASE/mybatis-plus-annotation-3.0-RELEASE.jar!/com/baomidou/mybatisplus/annotation/TableName.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/RoleMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/RoleDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/RoleServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.1.3.RELEASE/spring-security-crypto-5.1.3.RELEASE.jar!/org/springframework/security/crypto/password/NoOpPasswordEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/core/context/SecurityContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/core/context/SecurityContextHolder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-845">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/AuthenticationManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.3.RELEASE/spring-security-web-5.1.3.RELEASE.jar!/org/springframework/security/web/authentication/AbstractAuthenticationProcessingFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="127" column="21" selection-start-line="127" selection-start-column="21" selection-end-line="127" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/authentication/OAuth2AuthenticationManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1170">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.4.RELEASE/spring-aop-5.1.4.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="193" selection-start-line="193" selection-end-line="193" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.4.RELEASE/spring-aop-5.1.4.RELEASE.jar!/org/springframework/aop/support/DelegatingIntroductionInterceptor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.4.RELEASE/spring-aop-5.1.4.RELEASE.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/UsernamePasswordAuthenticationToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/client/JdbcClientDetailsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/crypto/password/PasswordEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="54" column="50" lean-forward="true" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/client/ClientDetailsUserDetailsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.4.RELEASE/spring-aop-5.1.4.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/client/ClientCredentialsTokenEndpointFilter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/AuthorizationServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,19 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-          <folding>
-            <element signature="e#1649#1650#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.1.3.RELEASE/spring-security-config-5.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4368">
@@ -948,52 +682,345 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1378">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
+        <state relative-caret-position="102">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.1.3.RELEASE/spring-security-crypto-5.1.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.1.3.RELEASE/spring-security-core-5.1.3.RELEASE.jar!/org/springframework/security/authentication/dao/AbstractUserDetailsAuthenticationProvider.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="156">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/oauth/spring-security-oauth2/2.3.4.RELEASE/spring-security-oauth2-2.3.4.RELEASE.jar!/org/springframework/security/oauth2/provider/authentication/OAuth2AuthenticationManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-gateway/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/SecurityApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/PageInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2418">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.2/mybatis-3.5.2.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2236">
+          <caret line="119" column="92" selection-start-line="119" selection-start-column="92" selection-end-line="119" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/2.0.2/mybatis-spring-2.0.2.jar!/org/mybatis/spring/SqlSessionTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3770">
+          <caret line="202" selection-start-line="202" selection-end-line="202" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="192" column="20" lean-forward="true" selection-start-line="192" selection-start-column="20" selection-end-line="192" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/5.1.4/pagehelper-5.1.4.jar!/com/github/pagehelper/parser/CountSqlParser.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="98" column="5" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-utils/src/main/java/com/xuecheng/dto/BaseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-entities/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="18" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/RoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="13" column="51" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserDetailsImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="29" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/RoleMenuDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/RoleDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/MenuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/MenuService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="534">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="34" column="27" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="35" column="4" lean-forward="true" selection-start-line="35" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="74" column="43" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="74" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/MenuDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/MenuServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1664">
+          <caret line="64" column="48" selection-start-line="60" selection-start-column="16" selection-end-line="64" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/MenuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/vo/UserInfoVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/mapper/UserInfoMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserInfo.java">
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/MenuController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="27" />
+        <state relative-caret-position="468">
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/RoleController.java">
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/resources/mybatis/mapper/UserInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state relative-caret-position="390">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.4.RELEASE/spring-web-5.1.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-702">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="26" />
+          <folding>
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#1699#1700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.4.RELEASE/spring-aop-5.1.4.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="517" selection-start-line="517" selection-end-line="517" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-crypto/5.1.3.RELEASE/spring-security-crypto-5.1.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCryptPasswordEncoder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="56" column="19" lean-forward="true" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/dto/UserInfoDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-entities/src/main/java/com/xuecheng/entities/system/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/controller/UserInfoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        <state relative-caret-position="296">
+          <caret line="47" column="35" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="23" />
+          <folding>
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#929#930#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.4.RELEASE/spring-core-5.1.4.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework-security/src/main/java/com/xuecheng/security/service/serviceimpl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="110" column="11" selection-start-line="110" selection-start-column="11" selection-end-line="110" selection-end-column="11" />
         </state>
       </provider>
     </entry>

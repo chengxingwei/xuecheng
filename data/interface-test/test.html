@@ -5,11 +5,11 @@
     <title>Title</title>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-        var token = "";
+        var token = "9bb7b45b-4066-463b-8f20-02dcc7cbc2bf";
         $(function () {
         });
         function test() {
-            getToken();
+            updateUserRole();
         }
         function getToken(){
             var params = {};
@@ -21,7 +21,91 @@
                 contentType: "application/json",
                 data: JSON.stringify(params),
                 success: function (data) {
-                    $("#msg").html(JSON.stringify(data))
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getUserList(){
+            var params = {access_token:token,pageIndex:0};
+            var url = "http://127.0.0.1:9999/security/userinfo/list";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function deleteUser(){
+            var params = {ids:[16,17]};
+            var url = "http://127.0.0.1:9999/security/userinfo/delete?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function addUser(){
+            var params = {userName:"cxw",password:"123456",mobile:"15290881749",status:1,nickName:"",realName:"程行威"};
+            var url = "http://127.0.0.1:9999/security/userinfo/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateUser(){
+            var params = {id:34,userName:"cxw",password:"123456",mobile:"15290881749",status:1,nickName:"",realName:"程行威"};
+            var url = "http://127.0.0.1:9999/security/userinfo/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateUserRole(){
+            var params = {id:34,roleIds:[1,2]};
+            var url = "http://127.0.0.1:9999/security/userinfo/role?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getCurrentUser(){
+            var params = {access_token:token,pageIndex:0};
+            var url = "http://127.0.0.1:9999/security/userinfo/current";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
                 }
             });
         }

@@ -3,5 +3,14 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.xuecheng.security.mapper.MenuMapper">
-
+    <select id="list" resultType="com.xuecheng.entities.system.Menu" parameterType="com.xuecheng.security.dto.MenuDTO">
+        select *  FROM xc_menu where 1 = 1
+        <if test="userName != null">
+            and MenuName like '%${menuName}%'
+        </if>
+        <if test="BtnName != null">
+            and BtnName like '%${btnName}%'
+        </if>
+        ORDER BY ParentID,Sort asc
+    </select>
 </mapper>

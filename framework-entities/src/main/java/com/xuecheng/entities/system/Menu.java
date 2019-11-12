@@ -30,11 +30,11 @@ public class Menu extends Model<Menu> {
 
     private String menuPath;
 
-    private String btnID;
-
     private Integer menuType;
 
     private String btnName;
+
+    private Integer sort;
 
     @Override
     protected Serializable pkVal() {
