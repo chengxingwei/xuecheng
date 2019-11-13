@@ -5,10 +5,12 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.xuecheng.entities.system.Role;
+import com.xuecheng.entities.system.RoleMenu;
 import com.xuecheng.entities.system.UserInfo;
 import com.xuecheng.enums.ResultTypeEnum;
 import com.xuecheng.security.dto.RoleDTO;
 import com.xuecheng.security.mapper.RoleMapper;
+import com.xuecheng.security.mapper.RoleMenuMapper;
 import com.xuecheng.security.mapper.UserInfoMapper;
 import com.xuecheng.security.service.RoleService;
 import com.xuecheng.security.service.UserInfoService;
@@ -25,6 +27,9 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper,Role> implements Rol
 
     @Autowired
     private RoleMapper roleMapper;
+
+    @Autowired
+    private RoleMenuMapper roleMenuMapper;
 
     @Override
     public Result list(RoleDTO roleDTO) {
@@ -80,6 +85,20 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper,Role> implements Rol
         List<Role> roles = roleMapper.findRolesByUser(roleDTO);
         Result result = new Result();
         result.setCode(0).setData(result);
+        return result;
+    }
+
+    @Override
+    public Result updateRole(RoleDTO roleDTO) {
+        Result result = new Result();
+        result.setCode(0);
+        roleMenuMapper.delete(new QueryWrapper<RoleMenu>().eq("RoleID",roleDTO.getId()));
+        for (Long menuId : roleDTO.getMenuIds()) {
+            RoleMenu roleMenu = new RoleMenu();
+            roleMenu.setRoleID(roleDTO.getId())
+                    .setMenuID(menuId);
+            roleMenuMapper.insert(roleMenu);
+        }
         return result;
     }
 }

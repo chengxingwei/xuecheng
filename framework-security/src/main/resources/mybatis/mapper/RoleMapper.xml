@@ -17,17 +17,11 @@ AND xc_user_role.UserInfoID=#{userId}
 
     <select id="list" resultType="com.xuecheng.entities.system.Role" parameterType="com.xuecheng.security.dto.RoleDTO">
         select *  FROM xc_role where 1 = 1
-        <if test="userName != null">
-            and UserName like '%${userName}%'
+        <if test="roleName != null">
+            and roleName like '%${roleName}%'
         </if>
         <if test="status != null">
             and Status = #{status}
-        </if>
-        <if test="nickName != null">
-            and NickName like '%${nickName}%'
-        </if>
-        <if test="realName != null">
-            and RealName like '%${realName}%'
         </if>
     </select>
 </mapper>

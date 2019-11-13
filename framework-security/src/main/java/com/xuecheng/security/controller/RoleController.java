@@ -38,4 +38,8 @@ public class RoleController {
         return roleService.delete(roleDTO);
     }
 
+    @PostMapping("/menu")
+    public Result updateMenu(@RequestBody RoleDTO roleDTO ){
+        return roleService.updateRole(roleDTO);
+    }
 }

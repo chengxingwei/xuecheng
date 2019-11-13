@@ -1,70 +1,82 @@
-2019-11-12 08:29:13,351 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:9999:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2019-11-13 08:18:05,276 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:9999:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2019-11-12 08:29:13,354 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 192.168.100.1:9999_true,
+2019-11-13 08:18:05,276 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 192.168.100.1:9999_true,
 
-2019-11-12 08:29:56,081 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2019-11-13 08:29:13,981 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2019-11-12 08:29:56,081 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_true,
+2019-11-13 08:29:13,981 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_true,
 
-2019-11-12 08:44:56,252 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573519480733
+2019-11-13 08:36:09,730 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573605352946
 
-2019-11-12 08:45:09,443 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
+2019-11-13 08:36:18,301 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
 
-2019-11-12 08:45:09,790 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+2019-11-13 08:36:19,220 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 08:47:06,285 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573519609815
+2019-11-13 08:36:59,742 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573605404221
 
-2019-11-12 08:47:08,793 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+2019-11-13 08:37:07,031 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
 
-2019-11-12 08:47:26,288 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573519628793
+2019-11-13 08:37:08,820 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 08:47:26,762 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+2019-11-13 08:48:14,862 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573606078991
 
-2019-11-12 09:11:38,814 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:9999@DEFAULT@DEFAULT_GROUP@@framework-gateway, region: unknown, msg: client timeout after 15000, last beat: 1573521083485
+2019-11-13 08:48:25,977 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
 
-2019-11-12 09:11:41,570 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573521081830
+2019-11-13 08:48:28,421 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 09:11:53,938 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.100.1:9999:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2019-11-13 08:52:29,919 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573606332867
 
-2019-11-12 09:11:53,938 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 
+2019-11-13 08:52:44,924 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
 
-2019-11-12 09:11:56,573 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2019-11-13 08:52:44,924 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 
 
-2019-11-12 09:11:56,573 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 
+2019-11-13 09:21:05,125 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2019-11-12 12:58:11,399 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:9999:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2019-11-13 09:21:05,125 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_true,
 
-2019-11-12 12:58:11,512 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 192.168.100.1:9999_true,
+2019-11-13 09:21:20,189 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573608065124
 
-2019-11-12 13:03:54,483 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
+2019-11-13 09:21:20,587 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 13:03:54,483 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_true,
+2019-11-13 09:21:40,193 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573608080587
 
-2019-11-12 13:08:14,530 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573535274880
+2019-11-13 09:21:41,534 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
 
-2019-11-12 13:08:18,593 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
+2019-11-13 09:21:43,992 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 13:08:20,156 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+2019-11-13 14:07:57,431 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:9999:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2019-11-12 13:12:09,576 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573535510992
+2019-11-13 14:07:57,433 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 192.168.100.1:9999_true,
 
-2019-11-12 13:12:21,303 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+2019-11-13 14:08:46,060 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_true_false_DEFAULT]
 
-2019-11-12 13:13:44,596 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573535607188
+2019-11-13 14:08:46,061 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_true,
 
-2019-11-12 13:13:57,972 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
+2019-11-13 14:11:11,091 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573625451770
 
-2019-11-12 13:13:59,272 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+2019-11-13 14:11:17,413 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
 
-2019-11-12 13:19:11,617 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:9999@DEFAULT@DEFAULT_GROUP@@framework-gateway, region: unknown, msg: client timeout after 15000, last beat: 1573535936378
+2019-11-13 14:11:19,251 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 13:19:14,655 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573535936742
+2019-11-13 14:26:06,289 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573626349501
 
-2019-11-12 13:19:26,772 INFO DEFAULT_GROUP@@framework-gateway {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.100.1:9999:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2019-11-13 14:26:16,423 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
 
-2019-11-12 13:19:26,772 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-gateway, ips: 
+2019-11-13 14:26:18,181 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 
-2019-11-12 13:19:29,657 INFO DEFAULT_GROUP@@framework-security {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.100.1:8001:unknown:DEFAULT_1.0_false_false_DEFAULT]
+2019-11-13 14:28:01,310 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573626463202
 
-2019-11-12 13:19:29,657 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 
+2019-11-13 14:28:04,457 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
+
+2019-11-13 14:28:06,270 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2019-11-13 14:31:56,352 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573626697380
+
+2019-11-13 14:31:56,641 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
+
+2019-11-13 14:32:51,361 INFO {POS} {IP-DISABLED} valid: 192.168.100.1:8001@DEFAULT@DEFAULT_GROUP@@framework-security, region: unknown, msg: client timeout after 15000, last beat: 1573626755656
+
+2019-11-13 14:32:56,947 INFO [IP-UPDATED] namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3, service: DEFAULT_GROUP@@framework-security, ips: 192.168.100.1:8001_false,
+
+2019-11-13 14:32:58,994 INFO service: DEFAULT_GROUP@@framework-security {POS} {IP-ENABLED} valid: 192.168.100.1:8001@DEFAULT, region: unknown, msg: client beat ok
 

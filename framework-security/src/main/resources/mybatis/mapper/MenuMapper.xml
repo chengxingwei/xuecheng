@@ -4,13 +4,29 @@
 
 <mapper namespace="com.xuecheng.security.mapper.MenuMapper">
     <select id="list" resultType="com.xuecheng.entities.system.Menu" parameterType="com.xuecheng.security.dto.MenuDTO">
-        select *  FROM xc_menu where 1 = 1
-        <if test="userName != null">
-            and MenuName like '%${menuName}%'
+        <choose>
+            <when test="roleId == null or roleId == 1">
+                SELECT
+                 *
+                FROM
+                xc_menu
+                where 1 = 1
+            </when>
+            <otherwise>
+                SELECT DISTINCT
+                xc_menu.*
+                FROM
+                xc_role_menu,
+                 xc_menu
+                where xc_role_menu.roleId = #{roleId} and xc_menu.ID = xc_role_menu.MenuID
+            </otherwise>
+        </choose>
+        <if test="menuName != null">
+            and xc_menu.menuName like '%${menuName}%'
         </if>
-        <if test="BtnName != null">
-            and BtnName like '%${btnName}%'
+        <if test="btnName != null">
+            and xc_menu.BtnName like '%${btnName}%'
         </if>
-        ORDER BY ParentID,Sort asc
+        ORDER BY xc_menu.ParentID,xc_menu.Sort asc
     </select>
 </mapper>

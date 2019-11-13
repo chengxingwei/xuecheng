@@ -5,11 +5,11 @@
     <title>Title</title>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-        var token = "9bb7b45b-4066-463b-8f20-02dcc7cbc2bf";
+        var token = "153db12d-de81-4f10-b565-c39d6483b393";
         $(function () {
         });
         function test() {
-            updateUserRole();
+            deleteMenu();
         }
         function getToken(){
             var params = {};
@@ -104,6 +104,118 @@
                 dataType: "json",
                 contentType: "application/json",
                 data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getRoleList(){
+            var params = {access_token:token};
+            var url = "http://127.0.0.1:9999/security/role/list";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function addRole(){
+            var params = {roleName:"管理员123",status:1};
+            var url = "http://127.0.0.1:9999/security/role/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateRole(){
+            var params = {roleName:"管理员1232222",status:1,id:3};
+            var url = "http://127.0.0.1:9999/security/role/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function deleteRole(){
+            var params = {ids:[3]};
+            var url = "http://127.0.0.1:9999/security/role/delete?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateRoleMenu(){
+            var params = {id:2,menuIds:[1,2]};
+            var url = "http://127.0.0.1:9999/security/role/menu?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getMenuList(){
+            var params = {access_token:token,roleId:2};
+            var url = "http://127.0.0.1:9999/security/menu/list";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function addMenu(){
+            var params = {menuName:"sddsfsdf",parentId:0,menuPath:"/asdasd",menuType:1,btnName:"测试",sort:1,id:1};
+            var url = "http://127.0.0.1:9999/security/menu/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function deleteMenu(){
+            var params = {ids:[1]};
+            var url = "http://127.0.0.1:9999/security/menu/delete?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
                 success: function (data) {
                     $("#msg").html(JSON.stringify(data));
                 }

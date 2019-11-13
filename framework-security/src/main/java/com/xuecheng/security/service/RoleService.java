@@ -35,4 +35,11 @@ public interface RoleService extends IService<Role> {
      * @return
      */
     public Result listByUser(RoleDTO roleDTO);
+
+    /**
+     * 修改角色菜单权限
+     * @param roleDTO
+     * @return
+     */
+    public Result updateRole(RoleDTO roleDTO);
 }

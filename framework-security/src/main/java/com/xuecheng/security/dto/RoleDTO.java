@@ -11,4 +11,5 @@ public class RoleDTO extends BaseDTO {
     private Long[] ids;
     private Integer status;
     private String roleName;
+    private Long[] menuIds;
 }

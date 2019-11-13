@@ -16,6 +16,11 @@ public class MenuDTO  extends BaseDTO {
 
     private String btnName;
 
+    /*
+    角色id
+     */
+    private Long roleId;
+
     private Integer sort;
 
     private Long[] ids;
