@@ -64,9 +64,9 @@ info:
 feign:
   hystrix:
     enabled: true
-# logging:
-#   level:
-#     root: debug
 security:
   basic:
     enabled: false
+# logging:
+#   level:
+#     root: debug

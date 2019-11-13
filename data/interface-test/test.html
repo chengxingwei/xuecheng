@@ -5,11 +5,11 @@
     <title>Title</title>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-        var token = "153db12d-de81-4f10-b565-c39d6483b393";
+        var token = "1b46e38d-5306-437d-bdb3-8bcc8c08de1a";
         $(function () {
         });
         function test() {
-            deleteMenu();
+            getMenuList();
         }
         function getToken(){
             var params = {};
@@ -181,7 +181,7 @@
         }
 		function getMenuList(){
             var params = {access_token:token,roleId:2};
-            var url = "http://127.0.0.1:9999/security/menu/list";
+            var url = "http://47.100.234.9:9999/security/menu/list";
             $.ajax({
                 type: "GET",
                 url: url,
