@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50727
 File Encoding         : 65001
 
-Date: 2019-11-09 15:41:25
+Date: 2019-11-18 10:53:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -139,6 +139,223 @@ CREATE TABLE `job_status_trace_log` (
 INSERT INTO `job_status_trace_log` VALUES ('00020b84-d3d3-4c63-9e35-d94387c0a5ba', 'DemoSimpleJob', '', 'DemoSimpleJob@-@0@-@READY@-@192.168.100.1@-@5480', '192.168.100.1', 'LITE_EXECUTOR', 'READY', '[0]', 'TASK_RUNNING', '', '2019-10-19 14:18:19');
 
 -- ----------------------------
+-- Table structure for me_company
+-- ----------------------------
+DROP TABLE IF EXISTS `me_company`;
+CREATE TABLE `me_company` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `ProvinceCode` varchar(255) DEFAULT NULL,
+  `CityCode` varchar(255) DEFAULT NULL,
+  `DistrictCode` varchar(255) DEFAULT NULL,
+  `TownCode` varchar(255) DEFAULT NULL,
+  `ProvinceName` varchar(255) DEFAULT NULL,
+  `CityName` varchar(255) DEFAULT NULL,
+  `DistrictName` varchar(255) DEFAULT NULL,
+  `TownName` varchar(255) DEFAULT NULL,
+  `VillageCode` varchar(255) DEFAULT NULL,
+  `VillageName` varchar(255) DEFAULT NULL,
+  `AddressDetail` varchar(255) DEFAULT NULL,
+  `CompanyName` varchar(100) DEFAULT NULL COMMENT '企业名称',
+  `DutySign` varchar(100) DEFAULT NULL COMMENT '税号',
+  `LegalUserName` varchar(50) DEFAULT NULL COMMENT '企业法人',
+  `LegalUserMobile` varchar(50) DEFAULT NULL COMMENT '法人电话',
+  `Contact` varchar(50) DEFAULT NULL COMMENT '联系人',
+  `Mobile` varchar(50) DEFAULT NULL COMMENT '联系电话',
+  `Status` int(255) DEFAULT NULL COMMENT '1:新注册 2:通过审核 3:审核失败 4：停用',
+  `StatusDesc` varchar(255) DEFAULT NULL COMMENT '状态错误描述',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_company
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_company_auth
+-- ----------------------------
+DROP TABLE IF EXISTS `me_company_auth`;
+CREATE TABLE `me_company_auth` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `AuthTypeId` bigint(20) DEFAULT NULL,
+  `AuthTypeCode` varchar(50) DEFAULT NULL,
+  `FrontImagePath` varchar(255) DEFAULT NULL,
+  `BackImagePath` varchar(255) DEFAULT NULL,
+  `FrontImageDesc` varchar(255) DEFAULT NULL,
+  `BackImageDesc` varchar(255) DEFAULT NULL,
+  `Type` int(11) DEFAULT NULL COMMENT '1:单面 2:正反面',
+  `Status` int(11) DEFAULT NULL COMMENT '1:新提交 2：通过 3：不通过',
+  `StatusDesc` varchar(255) DEFAULT NULL COMMENT '审核描述',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_company_auth
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_dept
+-- ----------------------------
+DROP TABLE IF EXISTS `me_dept`;
+CREATE TABLE `me_dept` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `DeptCode` varchar(100) DEFAULT NULL COMMENT '部门编号',
+  `DeptName` varchar(100) DEFAULT NULL COMMENT '部门名称',
+  `ParentId` bigint(20) DEFAULT NULL,
+  `ParentCode` varchar(100) DEFAULT NULL COMMENT '父部门编号',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_dept
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_member
+-- ----------------------------
+DROP TABLE IF EXISTS `me_member`;
+CREATE TABLE `me_member` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `UserName` varchar(255) DEFAULT NULL,
+  `Password` varchar(255) DEFAULT NULL,
+  `Status` int(10) DEFAULT NULL COMMENT '1:新注册 2:审核通过 3：审核不通过 4：停用',
+  `RealName` varchar(255) DEFAULT NULL,
+  `NickName` varchar(255) DEFAULT NULL,
+  `Avatar` varchar(255) DEFAULT NULL COMMENT '头像',
+  `Mobile` varchar(20) DEFAULT NULL COMMENT '手机号',
+  `ProvinceCode` varchar(255) DEFAULT NULL,
+  `CityCode` varchar(255) DEFAULT NULL,
+  `DistrictCode` varchar(255) DEFAULT NULL,
+  `TownCode` varchar(255) DEFAULT NULL,
+  `ProvinceName` varchar(255) DEFAULT NULL,
+  `CityName` varchar(255) DEFAULT NULL,
+  `DistrictName` varchar(255) DEFAULT NULL,
+  `TownName` varchar(255) DEFAULT NULL,
+  `VillageCode` varchar(255) DEFAULT NULL,
+  `VillageName` varchar(255) DEFAULT NULL,
+  `AddressDetail` varchar(255) DEFAULT NULL,
+  `QQ` varchar(255) DEFAULT NULL,
+  `Email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_member
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_member_auth
+-- ----------------------------
+DROP TABLE IF EXISTS `me_member_auth`;
+CREATE TABLE `me_member_auth` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `AuthTypeId` bigint(20) DEFAULT NULL,
+  `AuthTypeCode` varchar(50) DEFAULT NULL,
+  `FrontImagePath` varchar(255) DEFAULT NULL,
+  `BackImagePath` varchar(255) DEFAULT NULL,
+  `FrontImageDesc` varchar(255) DEFAULT NULL,
+  `BackImageDesc` varchar(255) DEFAULT NULL,
+  `Type` int(11) DEFAULT NULL COMMENT '1:单面 2:正反面',
+  `Status` int(11) DEFAULT NULL COMMENT '1:新提交 2：通过 3：不通过',
+  `StatusDesc` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_member_auth
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_member_company
+-- ----------------------------
+DROP TABLE IF EXISTS `me_member_company`;
+CREATE TABLE `me_member_company` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `MemberId` bigint(20) DEFAULT NULL,
+  `Company` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_member_company
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_member_role
+-- ----------------------------
+DROP TABLE IF EXISTS `me_member_role`;
+CREATE TABLE `me_member_role` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `MemberID` bigint(20) DEFAULT NULL,
+  `RoleID` bigint(20) DEFAULT NULL,
+  `Company` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_member_role
+-- ----------------------------
+INSERT INTO `me_member_role` VALUES ('1', '1', '1', null);
+INSERT INTO `me_member_role` VALUES ('2', '1', '2', null);
+INSERT INTO `me_member_role` VALUES ('3', '34', '1', null);
+INSERT INTO `me_member_role` VALUES ('4', '34', '2', null);
+
+-- ----------------------------
+-- Table structure for me_menu
+-- ----------------------------
+DROP TABLE IF EXISTS `me_menu`;
+CREATE TABLE `me_menu` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `MenuName` varchar(255) DEFAULT NULL COMMENT '菜单名称',
+  `MenuPath` varchar(255) DEFAULT NULL COMMENT '菜单路径',
+  `ParentID` bigint(20) DEFAULT NULL COMMENT '父菜单ID',
+  `MenuType` int(10) DEFAULT NULL COMMENT '1:菜单 2:按钮',
+  `BtnName` varchar(255) DEFAULT NULL,
+  `Sort` int(10) DEFAULT NULL,
+  `Company` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+-- ----------------------------
+-- Records of me_menu
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for me_role
+-- ----------------------------
+DROP TABLE IF EXISTS `me_role`;
+CREATE TABLE `me_role` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `RoleName` varchar(255) DEFAULT NULL,
+  `Status` int(11) DEFAULT NULL COMMENT '1：正常 2：禁用',
+  `Company` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+
+-- ----------------------------
+-- Records of me_role
+-- ----------------------------
+INSERT INTO `me_role` VALUES ('1', '超级管理员', '1', null);
+INSERT INTO `me_role` VALUES ('2', '普通用户', '1', null);
+
+-- ----------------------------
+-- Table structure for me_role_menu
+-- ----------------------------
+DROP TABLE IF EXISTS `me_role_menu`;
+CREATE TABLE `me_role_menu` (
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
+  `RoleID` bigint(20) DEFAULT NULL,
+  `MenuID` bigint(20) DEFAULT NULL,
+  `Company` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of me_role_menu
+-- ----------------------------
+INSERT INTO `me_role_menu` VALUES ('9', '2', '1', null);
+INSERT INTO `me_role_menu` VALUES ('10', '2', '2', null);
+
+-- ----------------------------
 -- Table structure for oauth_access_token
 -- ----------------------------
 DROP TABLE IF EXISTS `oauth_access_token`;
@@ -196,7 +413,7 @@ CREATE TABLE `oauth_client_details` (
 -- ----------------------------
 -- Records of oauth_client_details
 -- ----------------------------
-INSERT INTO `oauth_client_details` VALUES ('client', '', '$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', 'all', 'client_credentials,password,refresh_token,authorization_code', null, 'oauth2', null, null, null, null);
+INSERT INTO `oauth_client_details` VALUES ('client', '', '$2a$10$FJnM8z35fhRFvJGlhNpJZ.zw/GGE4cVTjfCK8uP8o6e4oo5H3s29G', 'all', 'client_credentials,password,refresh_token,authorization_code', null, 'oauth2', null, null, null, null);
 
 -- ----------------------------
 -- Table structure for oauth_client_token
@@ -243,20 +460,36 @@ CREATE TABLE `oauth_refresh_token` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for xc_button
+-- Table structure for xc_config
 -- ----------------------------
-DROP TABLE IF EXISTS `xc_button`;
-CREATE TABLE `xc_button` (
-  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
-  `BgImage` varchar(255) DEFAULT NULL,
-  `BthStyle` varchar(255) DEFAULT NULL,
-  `BtnClass` varchar(255) DEFAULT NULL,
-  `BtnName` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`ID`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+DROP TABLE IF EXISTS `xc_config`;
+CREATE TABLE `xc_config` (
+  `ID` bigint(20) NOT NULL,
+  `ConfigKey` varchar(100) DEFAULT NULL,
+  `ConfigValue` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of xc_button
+-- Records of xc_config
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for xc_dicts
+-- ----------------------------
+DROP TABLE IF EXISTS `xc_dicts`;
+CREATE TABLE `xc_dicts` (
+  `ID` bigint(20) NOT NULL,
+  `Code` varchar(50) DEFAULT NULL COMMENT '字典编码',
+  `Name` varchar(255) DEFAULT NULL COMMENT '字典名称',
+  `ParentId` bigint(20) DEFAULT NULL COMMENT '父ID',
+  `ParentCode` varchar(50) DEFAULT NULL COMMENT '父级编码',
+  `Status` int(11) DEFAULT NULL COMMENT '状态(1:系统默认,2:自定义)',
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of xc_dicts
 -- ----------------------------
 
 -- ----------------------------
@@ -268,10 +501,11 @@ CREATE TABLE `xc_menu` (
   `MenuName` varchar(255) DEFAULT NULL COMMENT '菜单名称',
   `MenuPath` varchar(255) DEFAULT NULL COMMENT '菜单路径',
   `ParentID` bigint(20) DEFAULT NULL COMMENT '父菜单ID',
-  `BtnID` bigint(20) DEFAULT NULL COMMENT '按钮ID',
   `MenuType` int(10) DEFAULT NULL COMMENT '1:菜单 2:按钮',
+  `BtnName` varchar(255) DEFAULT NULL,
+  `Sort` int(10) DEFAULT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of xc_menu
@@ -286,42 +520,49 @@ CREATE TABLE `xc_role` (
   `RoleName` varchar(255) DEFAULT NULL,
   `Status` int(11) DEFAULT NULL COMMENT '1：正常 2：禁用',
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of xc_role
 -- ----------------------------
-INSERT INTO `xc_role` VALUES ('1', '2', '1');
+INSERT INTO `xc_role` VALUES ('1', '超级管理员', '1');
+INSERT INTO `xc_role` VALUES ('2', '普通用户', '1');
 
 -- ----------------------------
 -- Table structure for xc_role_menu
 -- ----------------------------
 DROP TABLE IF EXISTS `xc_role_menu`;
 CREATE TABLE `xc_role_menu` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `RoleID` bigint(20) DEFAULT NULL,
   `MenuID` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of xc_role_menu
 -- ----------------------------
+INSERT INTO `xc_role_menu` VALUES ('9', '2', '1');
+INSERT INTO `xc_role_menu` VALUES ('10', '2', '2');
 
 -- ----------------------------
 -- Table structure for xc_user_role
 -- ----------------------------
 DROP TABLE IF EXISTS `xc_user_role`;
 CREATE TABLE `xc_user_role` (
-  `ID` bigint(20) NOT NULL,
+  `ID` bigint(20) NOT NULL AUTO_INCREMENT,
   `UserInfoID` bigint(20) DEFAULT NULL,
   `RoleID` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of xc_user_role
 -- ----------------------------
+INSERT INTO `xc_user_role` VALUES ('1', '1', '1');
+INSERT INTO `xc_user_role` VALUES ('2', '1', '2');
+INSERT INTO `xc_user_role` VALUES ('3', '34', '1');
+INSERT INTO `xc_user_role` VALUES ('4', '34', '2');
 
 -- ----------------------------
 -- Table structure for xc_userinfo
@@ -336,12 +577,12 @@ CREATE TABLE `xc_userinfo` (
   `NickName` varchar(255) DEFAULT NULL COMMENT '昵称',
   `RealName` varchar(255) DEFAULT NULL COMMENT '真实姓名',
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of xc_userinfo
 -- ----------------------------
-INSERT INTO `xc_userinfo` VALUES ('1', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'admin', null, null);
+INSERT INTO `xc_userinfo` VALUES ('1', '15290881749', '$2a$10$86PGitnzOqe1WuBy9OdV7enZXM6dMKp8MSiqxCwR7RDSyVbP8bqpq', '2', 'admin', null, null);
 INSERT INTO `xc_userinfo` VALUES ('2', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('3', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('4', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
@@ -356,8 +597,6 @@ INSERT INTO `xc_userinfo` VALUES ('12', '15290881749', '$2a$10$ZDjxKik2BmnBxdMEr
 INSERT INTO `xc_userinfo` VALUES ('13', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('14', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('15', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
-INSERT INTO `xc_userinfo` VALUES ('16', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
-INSERT INTO `xc_userinfo` VALUES ('17', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('18', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('19', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('20', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
@@ -374,3 +613,7 @@ INSERT INTO `xc_userinfo` VALUES ('30', '15290881749', '$2a$10$ZDjxKik2BmnBxdMEr
 INSERT INTO `xc_userinfo` VALUES ('31', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('32', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
 INSERT INTO `xc_userinfo` VALUES ('33', '15290881749', '$2a$10$ZDjxKik2BmnBxdMErtkxke.iLSKqC.WBViyPx1bLDXS80F8UGpLOG', '2', 'qwe', null, null);
+INSERT INTO `xc_userinfo` VALUES ('34', '15290881749', '$2a$10$9xIYr0S7gokW8gw.QFVrc.Wo9PWmvFosge2Hy/y3O8j1znvt1tGwW', '1', 'cxw', '', '程行威');
+INSERT INTO `xc_userinfo` VALUES ('35', '15290881749', '$2a$10$L3ieO2ToWmssTaESXSjTx.IDfGZYEHwRrASuuUfOZCebbE9S3P1c2', '1', 'cxw', '', '程行威');
+INSERT INTO `xc_userinfo` VALUES ('36', '15290881749', '$2a$10$SS2ZQHwbD4QNElRRvTjpFeFuL.NkkD5UkTpvp1jHSHpGp.CzO59ES', '1', 'cxw', '', '程行威');
+INSERT INTO `xc_userinfo` VALUES ('37', '15290881749', '$2a$10$ALoBMsIpgG3kxdFeFf0YfOTBt6ZMb9ADHlDZWDGDxFiH9sFUzkvm.', '1', 'cxw', '', '程行威');

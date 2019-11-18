@@ -12,11 +12,10 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.*;
-import org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter;
 import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
-import org.springframework.security.oauth2.provider.endpoint.TokenEndpoint;
 import org.springframework.security.oauth2.provider.token.DefaultAuthenticationKeyGenerator;
 import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
+import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
 import javax.sql.DataSource;
@@ -33,6 +32,7 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
 
     @Autowired
     private UserServiceImpl userDetailsService;
+
 
     @Autowired
     private  RedisConnectionFactory redisConnectionFactory;
@@ -66,10 +66,16 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints.tokenStore(tokenStore())
                 .userDetailsService(userDetailsService)
-                .authenticationManager(authenticationManager);
+                .authenticationManager(authenticationManager)
+                ;
         endpoints.tokenServices(defaultTokenServices());
     }
 
+
+    @Bean
+    public TokenEnhancer customTokenEnhancer() {
+        return new SysTokenEnhancer();
+    }
     /**
      * <p>注意，自定义TokenServices的时候，需要设置@Primary，否则报错，</p>
      * @return
@@ -80,6 +86,7 @@ public class AuthorizationServerConfig  extends AuthorizationServerConfigurerAda
         DefaultTokenServices tokenServices = new DefaultTokenServices();
         tokenServices.setTokenStore(tokenStore());
         tokenServices.setSupportRefreshToken(true);
+        tokenServices.setTokenEnhancer(customTokenEnhancer());
         tokenServices.setClientDetailsService(clientDetails());
         tokenServices.setAccessTokenValiditySeconds(60*60*12); // token有效期自定义设置，默认12小时
         tokenServices.setRefreshTokenValiditySeconds(60 * 60 * 24 * 7);//默认30天，这里修改

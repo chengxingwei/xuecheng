@@ -1,0 +1,36 @@
+2019-11-12 08:27:24,990 WARN [master-db] jdbc:mysql://106.13.16.189:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2019-11-12 08:27:25,554 WARN useAddressServer:true
+
+2019-11-12 08:27:25,624 WARN isQuickStart:false
+
+2019-11-12 12:58:05,239 WARN [master-db] jdbc:mysql://106.13.16.189:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2019-11-12 12:58:05,842 WARN useAddressServer:true
+
+2019-11-12 12:58:05,952 WARN isQuickStart:false
+
+2019-11-12 17:42:36,176 WARN [master-db] jdbc:mysql://106.13.16.189:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2019-11-12 17:42:36,674 WARN useAddressServer:true
+
+2019-11-12 17:42:36,771 WARN isQuickStart:false
+
+2019-11-13 14:05:37,322 WARN [master-db] jdbc:mysql://106.13.16.189:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2019-11-13 14:05:38,088 WARN useAddressServer:true
+
+2019-11-13 14:05:38,256 WARN isQuickStart:false
+
+2019-11-13 15:22:37,142 WARN [master-db] jdbc:mysql://106.13.16.189:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2019-11-13 15:22:37,554 WARN useAddressServer:true
+
+2019-11-13 15:22:37,620 WARN isQuickStart:false
+
+2019-11-13 17:01:09,205 WARN [master-db] jdbc:mysql://106.13.16.189:3306/nacos_config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true
+
+2019-11-13 17:01:09,954 WARN useAddressServer:true
+
+2019-11-13 17:01:10,083 WARN isQuickStart:false
+

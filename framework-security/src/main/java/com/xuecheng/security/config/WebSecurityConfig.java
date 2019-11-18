@@ -32,6 +32,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 
 
+
+
     /**定义认证用户信息获取来源，密码校验规则等*/
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {

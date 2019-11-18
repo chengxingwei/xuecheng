@@ -5,11 +5,39 @@
     <title>Title</title>
     <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript">
-        var token = "1b46e38d-5306-437d-bdb3-8bcc8c08de1a";
+        var token = "9268c6a5-e8dd-4199-8c10-58be29125963";
         $(function () {
         });
         function test() {
-            getMenuList();
+            testaaa();
+        }
+		function testaaa(){
+            var params = {customerName:"sddsfsdf",customerPhone:12120,userId:1};
+            var url = "http://127.0.0.1:8088/api/customers";
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function sdsfsdf(){
+            var params = { name:"cxw",password:"123123123" };
+            var url = "http://127.0.0.1:8088/api/users/login";
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
         }
         function getToken(){
             var params = {};
@@ -22,7 +50,9 @@
                 data: JSON.stringify(params),
                 success: function (data) {
                     $("#msg").html(JSON.stringify(data));
-                }
+                },error: function (response, ajaxOptions, thrownError) {
+				    $("#msg").html("请求异常");
+				}
             });
         }
 		function getUserList(){
@@ -216,6 +246,20 @@
                 dataType: "json",
                 contentType: "application/json",
                 data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function userInit(){
+            var params = {access_token:token};
+            var url = "http://127.0.0.1:9999/security/userinfo/1";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
                 success: function (data) {
                     $("#msg").html(JSON.stringify(data));
                 }

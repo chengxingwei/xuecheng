@@ -15,6 +15,7 @@ public class UserDetailsImpl implements UserDetails {
     private String password;
     //包含着用户对应的所有Role，在使用时调用者给对象注入roles
     private List<Role> roles;
+    private String mobile;
 
 
     public void setUsername(String username) {
@@ -49,6 +50,7 @@ public class UserDetailsImpl implements UserDetails {
         this.username = user.getUserName();
         this.password = user.getPassword();
         this.roles = roles;
+        this.mobile = user.getMobile();
     }
 
 
@@ -90,5 +92,13 @@ public class UserDetailsImpl implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
     }
 }
