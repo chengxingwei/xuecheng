@@ -7,3 +7,15 @@ framework-provider-activiti/target
 framework-provider-user/target
 framework-security/target
 framework-utils/target
+framework-annotest/target
+framework-elastic-job/target
+framework-kafka/target
+framework-member/target
+framework-provider-activiti/target
+framework-provider-user/target
+framework-zipkin/target
+framework-member/framework-member-api/target
+framework-member/framework-member-common/target
+framework-member/framework-member-service/target
+data/nacos/logs
+data/nacos/target
