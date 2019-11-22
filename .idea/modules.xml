@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/framework-entities/framework-entities.iml" filepath="$PROJECT_DIR$/framework-entities/framework-entities.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-gateway/framework-gateway.iml" filepath="$PROJECT_DIR$/framework-gateway/framework-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-kafka/framework-kafka.iml" filepath="$PROJECT_DIR$/framework-kafka/framework-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-member/framework-member.iml" filepath="$PROJECT_DIR$/framework-member/framework-member.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-member/framework-member-api/framework-member-api.iml" filepath="$PROJECT_DIR$/framework-member/framework-member-api/framework-member-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-member/framework-member-common/framework-member-common.iml" filepath="$PROJECT_DIR$/framework-member/framework-member-common/framework-member-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framework-member/framework-member-service/framework-member-service.iml" filepath="$PROJECT_DIR$/framework-member/framework-member-service/framework-member-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-parent/framework-parent.iml" filepath="$PROJECT_DIR$/framework-parent/framework-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-provider-activiti/framework-provider-activiti.iml" filepath="$PROJECT_DIR$/framework-provider-activiti/framework-provider-activiti.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework-provider-user/framework-provider-user.iml" filepath="$PROJECT_DIR$/framework-provider-user/framework-provider-user.iml" />

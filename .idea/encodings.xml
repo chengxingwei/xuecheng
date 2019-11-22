@@ -7,6 +7,10 @@
     <file url="file://$PROJECT_DIR$/framework-entities" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework-member" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework-member/framework-member-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework-member/framework-member-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/framework-member/framework-member-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework-provider-activiti" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework-provider-user" charset="UTF-8" />

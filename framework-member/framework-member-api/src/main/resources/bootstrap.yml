@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: framework-member
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: a144e2c1-cdbd-4b1c-b32e-ac4e5fc970f3
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql

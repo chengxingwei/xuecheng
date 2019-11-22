@@ -11,7 +11,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @EnableEurekaClient //本服务启动后会自动注册进eureka服务中
 @EnableDiscoveryClient //服务发现
 @EnableCircuitBreaker//对hystrixR熔断机制的支持
-@EntityScan("com.xuecheng.entities")
+@EntityScan("com.xuecheng.entity")
 public class App {
     public static void main(String[] args){
         SpringApplication.run(App.class,args);

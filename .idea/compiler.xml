@@ -12,9 +12,11 @@
         <module name="framework-entities" />
         <module name="framework-gateway" />
         <module name="framework-kafka" />
+        <module name="framework-member-api" />
+        <module name="framework-member-common" />
+        <module name="framework-member-service" />
         <module name="framework-provider-activiti" />
         <module name="framework-provider-user" />
-        <module name="framework-security" />
         <module name="framework-utils" />
         <module name="framework-zipkin" />
       </profile>
@@ -26,6 +28,10 @@
       <module name="framework-entities" target="1.8" />
       <module name="framework-gateway" target="8" />
       <module name="framework-kafka" target="1.8" />
+      <module name="framework-member" target="1.8" />
+      <module name="framework-member-api" target="1.7" />
+      <module name="framework-member-common" target="1.8" />
+      <module name="framework-member-service" target="1.8" />
       <module name="framework-parent" target="1.8" />
       <module name="framework-provider-activiti" target="1.8" />
       <module name="framework-provider-user" target="1.8" />

@@ -20,6 +20,7 @@
       <module>../framework-annotest</module>
       <module>../framework-kafka</module>
     <module>../framework-elastic-job</module>
+      <module>../framework-member</module>
   </modules>
   <name>framework-parent</name>
 
@@ -213,26 +214,26 @@
         <artifactId>sentinel-datasource-nacos</artifactId>
         <version>1.5.2</version>
       </dependency>
+      <dependency>
+        <groupId>com.baomidou</groupId>
+        <artifactId>mybatis-plus-boot-starter</artifactId>
+        <version>3.0-RELEASE</version>
+      </dependency>
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+        <version>1.2.12</version>
+      </dependency>
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>2.9.2</version>
+      </dependency>
+      <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+        <version>2.9.2</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
-  <build>
-    <finalName>framework-parent</finalName>
-    <resources>
-      <resource>
-        <directory>src/main/resources</directory>
-        <filtering>true</filtering>
-      </resource>
-    </resources>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-resources-plugin</artifactId>
-        <configuration>
-          <delimiters>
-            <delimit>$</delimit>
-          </delimiters>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>

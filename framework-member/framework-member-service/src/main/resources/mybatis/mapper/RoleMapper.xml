@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xuecheng.member.mapper.RoleMapper">
+    <select id="findRolesByMember" resultType="com.xuecheng.member.entity.Role" parameterType="com.xuecheng.member.dto.RoleDTO">
+        SELECT me_role.* FROM me_member_role,me_role
+WHERE me_member_role.RoleID = me_role.ID
+AND me_member_role.MemberID = #{memberId}
+    </select>
+
+    <select id="findRolesByMenu" resultType="com.xuecheng.member.entity.Role" parameterType="com.xuecheng.member.dto.RoleDTO">
+        select me_role.* from me_role_menu,me_role
+        WHERE me_role_menu.RoleID = me_role.ID
+        AND me_role_menu.MenuID = #{menuId}
+    </select>
+</mapper>

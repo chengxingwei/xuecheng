@@ -15,7 +15,7 @@ import org.springframework.security.oauth2.provider.authentication.OAuth2Authent
 @SpringBootApplication
 @EnableDiscoveryClient //服务发现
 @EnableCircuitBreaker//对hystrixR熔断机制的支持
-@EntityScan("com.xuecheng.entities")
+@EntityScan("com.xuecheng.entity")
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 @EnableResourceServer
 public class App {

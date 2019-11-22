@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        var token = "9268c6a5-e8dd-4199-8c10-58be29125963";
+        $(function () {
+        });
+        function test() {
+            getToken();
+        }
+		function testaaa(){
+            var params = {customerName:"sddsfsdf",customerPhone:12120,userId:1};
+            var url = "http://127.0.0.1:8088/api/customers";
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function sdsfsdf(){
+            var params = { name:"cxw",password:"123123123" };
+            var url = "http://127.0.0.1:8088/api/users/login";
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+        function getToken(){
+            var params = {};
+            var url = "http://127.0.0.1:9999/member/oauth/token?client_id=client&grant_type=password&username=admin&password=123456&client_secret=123456";
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                },error: function (response, ajaxOptions, thrownError) {
+				    $("#msg").html("请求异常");
+				}
+            });
+        }
+		function getUserList(){
+            var params = {access_token:token,pageIndex:0};
+            var url = "http://127.0.0.1:9999/security/userinfo/list";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function deleteUser(){
+            var params = {ids:[16,17]};
+            var url = "http://127.0.0.1:9999/security/userinfo/delete?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function addUser(){
+            var params = {userName:"cxw",password:"123456",mobile:"15290881749",status:1,nickName:"",realName:"程行威"};
+            var url = "http://127.0.0.1:9999/security/userinfo/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateUser(){
+            var params = {id:34,userName:"cxw",password:"123456",mobile:"15290881749",status:1,nickName:"",realName:"程行威"};
+            var url = "http://127.0.0.1:9999/security/userinfo/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateUserRole(){
+            var params = {id:34,roleIds:[1,2]};
+            var url = "http://127.0.0.1:9999/security/userinfo/role?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getCurrentUser(){
+            var params = {access_token:token,pageIndex:0};
+            var url = "http://127.0.0.1:9999/security/userinfo/current";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getRoleList(){
+            var params = {access_token:token};
+            var url = "http://127.0.0.1:9999/security/role/list";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function addRole(){
+            var params = {roleName:"管理员123",status:1};
+            var url = "http://127.0.0.1:9999/security/role/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateRole(){
+            var params = {roleName:"管理员1232222",status:1,id:3};
+            var url = "http://127.0.0.1:9999/security/role/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function deleteRole(){
+            var params = {ids:[3]};
+            var url = "http://127.0.0.1:9999/security/role/delete?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function updateRoleMenu(){
+            var params = {id:2,menuIds:[1,2]};
+            var url = "http://127.0.0.1:9999/security/role/menu?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function getMenuList(){
+            var params = {access_token:token,roleId:2};
+            var url = "http://47.100.234.9:9999/security/menu/list";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function addMenu(){
+            var params = {menuName:"sddsfsdf",parentId:0,menuPath:"/asdasd",menuType:1,btnName:"测试",sort:1,id:1};
+            var url = "http://127.0.0.1:9999/security/menu/save?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function deleteMenu(){
+            var params = {ids:[1]};
+            var url = "http://127.0.0.1:9999/security/menu/delete?access_token="+token;
+            $.ajax({
+                type: "POST",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: JSON.stringify(params),
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+		function userInit(){
+            var params = {access_token:token};
+            var url = "http://127.0.0.1:9999/security/userinfo/1";
+            $.ajax({
+                type: "GET",
+                url: url,
+                dataType: "json",
+                contentType: "application/json",
+                data: params,
+                success: function (data) {
+                    $("#msg").html(JSON.stringify(data));
+                }
+            });
+        }
+    </script>
+<body>
+<button id="btnTest" onclick="test()">测试</button>
+<div id="msg"></div>
+</body>
+</html>

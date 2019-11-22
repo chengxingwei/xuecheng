@@ -16,7 +16,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 @ComponentScan("com.xuecheng")
 @EnableDiscoveryClient //服务发现
 @EnableCircuitBreaker//对hystrixR熔断机制的支持
-@EntityScan("com.xuecheng.entities")
+@EntityScan("com.xuecheng.entity")
 @MapperScan("com.xuecheng.security.mapper")
 @EnableAuthorizationServer
 //@EnableWebSecurity
